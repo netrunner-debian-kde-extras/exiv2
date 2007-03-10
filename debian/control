@@ -1,0 +1,63 @@
+Source: exiv2
+Section: graphics
+Priority: optional
+Maintainer: KELEMEN Peter <fuji@debian.org>
+Build-Depends: debhelper (>= 4.0.0), g++ (>= 4.0.0), autotools-dev, chrpath, dpkg-dev (>= 1.13.19)
+Standards-Version: 3.7.2
+
+Package: exiv2
+Section: graphics
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: EXIF/IPTC metadata manipulation tool
+ Exiv2 can:
+  * print the EXIF metadata of JPEG images as summary info, interpreted values,
+    or the plain data for each tag (here is a sample)
+  * print the IPTC metadata of JPEG images
+  * print the JPEG comment of JPEG images
+  * set, add and delete EXIF and IPTC metadata of JPEG images
+  * adjust the EXIF timestamp (that's how it all started...)
+  * rename EXIF image files according to the EXIF timestamp
+  * extract EXIF metadata, IPTC metadata and JPEG comments from image files and
+    insert it again
+  * extract the thumbnail image embedded in the EXIF metadata
+  * delete the thumbnail or the complete EXIF metadata from an image
+
+Package: libexiv2-0.10
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: exiv2
+Replaces: libexiv2
+Conflicts: libexiv2
+Description: EXIF/IPTC metadata manipulation library
+ Exiv2 library supports:
+  * full read and write access to the EXIF and IPTC metadata of an image
+    through Exiv2 keys and standard C++ iterators
+  * a smart IPTC implementation that does not affect data that programs like
+    Photoshop store in the same image segment
+  * EXIF MakerNote support:
+    o MakerNote tags can be accessed just like any other EXIF metadata
+    o a sophisticated write algorithm avoids corrupting the MakerNote:
+  * extract and delete methods for EXIF thumbnails (both, JPEG and TIFF
+    thumbnails)
+  * set methods for EXIF thumbnails (JPEG only, TIFF thumbnails can be set from
+    individual tags)
+  * complete API documentation (by Doxygen)
+  * generic lower-level classes to access IFD (Image File Directory) data
+    structures
+
+Package: libexiv2-dev
+Section: libdevel
+Architecture: any
+Depends: libexiv2-0.10 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}, pkg-config
+Suggests: libexiv2-doc
+Description: EXIF/IPTC metadata manipulation library - development files
+ Exiv2 C++ header files.
+
+Package: libexiv2-doc
+Section: doc
+Architecture: all
+Depends: libexiv2-0.10
+Description: EXIF/IPTC metadata manipulation library - HTML documentation
+ Exiv2 HTML documentation.

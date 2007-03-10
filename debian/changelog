@@ -1,0 +1,141 @@
+exiv2 (0.10-1.4) unstable; urgency=high
+
+  * Non-Maintainer upload. Again :-(
+  * High-urgency upload for RC bugfix
+  * Apply Steve Langasek patch to overcome crashes on invalid input
+    - Image with corrupted metadata crashes Exiv2 (Closes: #401660)
+  * Move usr/lib/*.la  libtool linkage information file to -dev package
+    - file conflict with libexiv2-0.10 (Closes: #405805)
+  * Move usr/lib/*.so  development linkage file to -dev package
+  * Include upstream exiv2.pc in -dev package
+    - exiv2.pc is missing (Closes: #396060)
+  * Add libexiv2-dev Depends: pkg-config
+
+ -- Mark Purcell <msp@debian.org>  Sun, 21 Jan 2007 21:06:27 +0000
+
+exiv2 (0.10-1.3) unstable; urgency=low
+
+  * NMU.
+  * debian/rules dh_makeshlibs -V (Closes: #386899) 
+
+ -- Mark Purcell <msp@debian.org>  Thu, 21 Sep 2006 06:37:22 +0100
+
+exiv2 (0.10-1.2) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Fix overly strict shlibs line. Closes: #386899
+  * Also adding conflict,replaces from libexiv2-0.10 to libexiv2.
+
+ -- Andreas Barth <aba@not.so.argh.org>  Mon, 11 Sep 2006 20:04:40 +0200
+
+exiv2 (0.10-1.1) unstable; urgency=medium
+
+  [ David Schmitt ]
+  * Non-maintainer upload.
+  * Medium-urgency upload for RC bugfix.
+  * Change package name from libexiv2 to libexiv2-0.10 to encode the full
+    SONAME as well as for the C++ mt allocator ABI change, and conflict/replace
+    libexiv2 accordingly.  Closes: #339163, #382867.
+  * Remove unnecessary libexiv2.{postinst,postrm} scripts, as they don't do
+    anything that debhelper doesn't already do for us.
+  * replace shlibs.local by dh_makeshlibs -V
+  * make package bin-NMU-able by using ${binary:Version} and B-D on dpkg-dev
+    (>= 1.13.19)
+
+  [ Andreas Barth ]
+  * Uploading NMU.
+
+ -- Andreas Barth <aba@not.so.argh.org>  Sun, 10 Sep 2006 09:09:55 +0200
+
+exiv2 (0.10-1) unstable; urgency=low
+
+  * New Upstream Release. (Fixes: #370151)
+
+ -- KELEMEN Peter <fuji@debian.org>  Tue, 14 Jun 2006 00:02:57 +0200
+
+exiv2 (0.9.1-1) unstable; urgency=low
+
+  * New Upstream Release.
+  * debian/control: -dev Suggests: -doc.
+
+ -- KELEMEN Peter <fuji@debian.org>  Sat,  4 Feb 2006 07:45:00 +0100
+
+exiv2 (0.9-1) unstable; urgency=low
+
+  * New Upstream Release.
+  * debian/rules: Ship with upstream documentation by default.
+  * debian/control: relax build dependencies.
+
+ -- KELEMEN Peter <fuji@debian.org>  Fri, 27 Jan 2006 20:41:35 +0100
+
+exiv2 (0.7-10) unstable; urgency=low
+
+  * C++ allocator change.  (Closes: #339163)
+
+ -- KELEMEN Peter <fuji@debian.org>  Fri, 18 Nov 2005 00:08:45 +0100
+
+exiv2 (0.7-9) unstable; urgency=low
+
+  * Added missing Build-Depends: sharutils (Closes: #328376)
+  * Standards-Version: 3.6.2 (no changes)
+
+ -- KELEMEN Peter <fuji@debian.org>  Thu, 15 Sep 2005 14:54:32 +0200
+
+exiv2 (0.7-8) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- KELEMEN Peter <fuji@debian.org>  Wed, 14 Sep 2005 15:11:33 +0200
+
+exiv2 (0.7-7) experimental; urgency=low
+
+  * Upload to Debian archive.
+
+ -- KELEMEN Peter <fuji@debian.org>  Mon, 18 Jul 2005 00:18:51 +0200
+
+exiv2 (0.7-6) experimental; urgency=low
+
+  * g++-4.0 rebuild.
+
+ -- KELEMEN Peter <fuji@debian.org>  Mon, 11 Jul 2005 03:36:38 +0200
+
+exiv2 (0.7-5) experimental; urgency=low
+
+  * fix multiple copyrights
+  * strengthen lib deps
+
+ -- KELEMEN Peter <fuji@debian.org>  Sun, 19 Jun 2005 16:24:51 +0200
+
+exiv2 (0.7-4) experimental; urgency=low
+
+  * doc fixes
+
+ -- KELEMEN Peter <fuji@debian.org>  Sun, 19 Jun 2005 14:43:46 +0200
+
+exiv2 (0.7-3) experimental; urgency=low
+
+  * Make the package non-native.
+  * Build with g++-4.0.
+
+ -- KELEMEN Peter <fuji@debian.org>  Sat, 18 Jun 2005 19:34:44 +0200
+
+exiv2 (0.7-2) experimental; urgency=low
+
+  * static libray to -dev
+  * clean up -doc
+  * cmd.txt as example in exiv2
+
+ -- KELEMEN Peter <fuji@debian.org>  Thu, 16 Jun 2005 20:48:55 +0200
+
+exiv2 (0.7-1) experimental; urgency=low
+
+  * New upstream release.
+
+ -- KELEMEN Peter <fuji@debian.org>  Thu, 16 Jun 2005 10:46:37 +0200
+
+exiv2 (0.6.2-1) experimental; urgency=low
+
+  * Initial release. (Closes: #312490)
+
+ -- KELEMEN Peter <fuji@debian.org>  Wed,  8 Jun 2005 14:39:56 +0200
+
