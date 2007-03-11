@@ -2,7 +2,7 @@ Source: exiv2
 Section: graphics
 Priority: optional
 Maintainer: KELEMEN Peter <fuji@debian.org>
-Build-Depends: debhelper (>= 4.0.0), g++ (>= 4.0.0), autotools-dev, chrpath, dpkg-dev (>= 1.13.19)
+Build-Depends: debhelper (>= 4.0.0), g++ (>= 4.0.0), autotools-dev, chrpath, dpkg-dev (>= 1.13.19), zlib1g-dev
 Standards-Version: 3.7.2
 
 Package: exiv2
@@ -23,7 +23,7 @@ Description: EXIF/IPTC metadata manipulation tool
   * extract the thumbnail image embedded in the EXIF metadata
   * delete the thumbnail or the complete EXIF metadata from an image
 
-Package: libexiv2-0.10
+Package: libexiv2-0.12
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
@@ -50,7 +50,7 @@ Description: EXIF/IPTC metadata manipulation library
 Package: libexiv2-dev
 Section: libdevel
 Architecture: any
-Depends: libexiv2-0.10 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}, pkg-config
+Depends: libexiv2-0.12 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
 Suggests: libexiv2-doc
 Description: EXIF/IPTC metadata manipulation library - development files
  Exiv2 C++ header files.
@@ -58,6 +58,6 @@ Description: EXIF/IPTC metadata manipulation library - development files
 Package: libexiv2-doc
 Section: doc
 Architecture: all
-Depends: libexiv2-0.10
+Depends: libexiv2-0.12
 Description: EXIF/IPTC metadata manipulation library - HTML documentation
  Exiv2 HTML documentation.

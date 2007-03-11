@@ -72,15 +72,15 @@ binary-arch: build install
 	dh_testdir
 	dh_testroot
 # package libexiv2
-	dh_movefiles -plibexiv2-0.10		\
-		usr/lib/libexiv2-0.10.so	
+	dh_movefiles -plibexiv2-0.12		\
+		usr/lib/libexiv2-0.12.so	\
+		usr/lib/libexiv2.so		\
+		usr/lib/libexiv2.la
 # package libexiv2-dev
 	dh_movefiles -plibexiv2-dev		\
 		usr/bin/exiv2-config		\
+		usr/lib/pkgconfig/exiv2.pc	\
 		usr/include/exiv2		\
-		usr/lib/libexiv2.la		\
-		usr/lib/pkgconfig/exiv2.pc      \
-		usr/lib/libexiv2.so		\
 		usr/lib/libexiv2.a
 # package exiv2
 	dh_movefiles -pexiv2 usr/bin/exiv2
@@ -88,7 +88,7 @@ binary-arch: build install
 	dh_installchangelogs 
 # docs in package libexiv2-doc but in /usr/share/doc/libexiv2/
 	dh_installdocs
-	dh_installdocs -plibexiv2-0.10 -Pdebian/libexiv2-doc -Xcmd.txt -XMakefile -Xtemplates -Xcopyright $(CURDIR)/doc/*
+	dh_installdocs -plibexiv2-0.12 -Pdebian/libexiv2-doc -Xcmd.txt -XMakefile -Xtemplates -Xcopyright $(CURDIR)/doc/*
 # cmd.txt goes as example
 	dh_installexamples -pexiv2 $(CURDIR)/doc/cmd.txt
 #	dh_install
