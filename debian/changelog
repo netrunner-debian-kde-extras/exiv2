@@ -11,8 +11,9 @@ exiv2 (0.12-0.3) UNRELEASED; urgency=low
   * TODO: exiv2 source: maintainer-upload-has-incorrect-version-number
     0.12-0.3
   * TODO: libexiv2-dev: binary-without-manpage exiv2-config
+  * TODO: Upstream, fixup sonames.
 
- -- Mark Purcell <msp@debian.org>  Sun, 11 Mar 2007 23:14:04 +0000
+ -- Mark Purcell <msp@debian.org>  Sun, 11 Mar 2007 23:14:42 +0000
 
 exiv2 (0.12-0.2) experimental; urgency=low
 
