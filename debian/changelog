@@ -1,3 +1,14 @@
+exiv2 (0.12-0.3) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+  * Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
+  * Switch to cdbs
+  * Add debian/watch
+
+  * TODO: Setup debian/*.install to place everything in the correct location 
+
+ -- Mark Purcell <msp@debian.org>  Sun, 11 Mar 2007 11:38:25 +0000
+
 exiv2 (0.12-0.2) experimental; urgency=low
 
   * Non-maintainer upload. (NMU)
