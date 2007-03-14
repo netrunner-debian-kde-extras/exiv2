@@ -1,14 +1,13 @@
-exiv2 (0.12-1) UNRELEASED; urgency=low
+exiv2 (0.12-1) unstable; urgency=low
 
-  * NOT RELEASED YET
   * Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
   * Switch to cdbs
   * Add debian/watch
+  * Ack NMU fix.
+    - library package needs to be renamed (libstdc++ allocator change)
+    (Closes: #339163)
 
-  * TODO: libexiv2-dev: binary-without-manpage exiv2-config
-  * TODO: Upstream, fixup sonames.
-
- -- Mark Purcell <msp@debian.org>  Sun, 11 Mar 2007 23:14:42 +0000
+ -- Mark Purcell <msp@debian.org>  Wed, 14 Mar 2007 08:12:49 +0000
 
 exiv2 (0.12-0.2) experimental; urgency=low
 
