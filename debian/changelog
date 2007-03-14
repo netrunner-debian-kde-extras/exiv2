@@ -3,11 +3,26 @@ exiv2 (0.12-1) unstable; urgency=low
   * Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
   * Switch to cdbs
   * Add debian/watch
-  * Ack NMU fix.
+  * Ack NMU fix:
     - library package needs to be renamed (libstdc++ allocator change)
     (Closes: #339163)
 
  -- Mark Purcell <msp@debian.org>  Wed, 14 Mar 2007 08:12:49 +0000
+
+exiv2 (0.10-1.4) unstable; urgency=high
+
+  * Non-Maintainer upload. Again :-(
+  * High-urgency upload for RC bugfix
+  * Apply Steve Langasek patch to overcome crashes on invalid input
+    - Image with corrupted metadata crashes Exiv2 (Closes: #401660)
+  * Move usr/lib/*.la  libtool linkage information file to -dev package
+    - file conflict with libexiv2-0.10 (Closes: #405805)
+  * Move usr/lib/*.so  development linkage file to -dev package
+  * Include upstream exiv2.pc in -dev package
+    - exiv2.pc is missing (Closes: #396060)
+  * Add libexiv2-dev Depends: pkg-config
+
+ -- Mark Purcell <msp@debian.org>  Sun, 21 Jan 2007 21:06:27 +0000
 
 exiv2 (0.12-0.2) experimental; urgency=low
 
