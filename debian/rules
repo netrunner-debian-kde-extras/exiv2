@@ -8,9 +8,14 @@ include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/autotools.mk
 include /usr/share/cdbs/1/rules/simple-patchsys.mk
 
+install/exiv2::
+	/usr/bin/chrpath -d $(CURDIR)/debian/tmp/usr/bin/exiv2
+
 DEB_INSTALL_CHANGELOGS_ALL := doc/ChangeLog
 DEB_COMPRESS_EXCLUDE :=  .xls .js .idx .xml .php
-DEB_INSTALL_DOCS_ALL := -Xcmd.txt -XMakefile -Xtemplates -Xcopyright -XChangeLog
+DEB_INSTALL_DOCS_ALL := -Xcmd.txt -XMakefile -Xtemplates -XChangeLog
+DEB_CONFIGURE_EXTRA_FLAGS := --disable-rpath
+DEB_AUTO_UPDATE_LIBTOOL := true
 
 
 get-orig-source:
