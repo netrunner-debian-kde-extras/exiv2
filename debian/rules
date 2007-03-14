@@ -15,8 +15,6 @@ DEB_INSTALL_CHANGELOGS_ALL := doc/ChangeLog
 DEB_COMPRESS_EXCLUDE :=  .xls .js .idx .xml .php
 DEB_INSTALL_DOCS_ALL := -Xcmd.txt -XMakefile -Xtemplates -XChangeLog
 DEB_CONFIGURE_EXTRA_FLAGS := --disable-rpath
-DEB_AUTO_UPDATE_LIBTOOL := true
-
 
 get-orig-source:
 	@@dh_testdir
