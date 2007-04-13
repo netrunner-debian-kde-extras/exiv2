@@ -2,7 +2,13 @@ exiv2 (0.12-2) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
 
- -- Mark Purcell <msp@debian.org>  Wed, 14 Mar 2007 08:49:49 +0000
+  [ Achim Bohnet ]
+  * src/crwimage.cpp: backport from 0.14: Fixed mapping of CRW rotation
+    info to Exif orientation.
+    http://dev.robotbattle.com/cmtinfo_svn.php?r=10&l=50&v=1079
+    https://bugs.launchpad.net/ubuntu/+source/digikam/+bug/105947 
+
+ -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Fri, 13 Apr 2007 17:08:39 +0200
 
 exiv2 (0.12-1) unstable; urgency=low
 
