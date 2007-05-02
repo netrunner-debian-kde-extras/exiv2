@@ -1,14 +1,12 @@
-exiv2 (0.12-2) UNRELEASED; urgency=low
+exiv2 (0.14-1) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * new upstream release
 
   [ Achim Bohnet ]
-  * src/crwimage.cpp: backport from 0.14: Fixed mapping of CRW rotation
-    info to Exif orientation.
-    http://dev.robotbattle.com/cmtinfo_svn.php?r=10&l=50&v=1079
-    https://bugs.launchpad.net/ubuntu/+source/digikam/+bug/105947 
+  * libexiv2-dev: exiv2 has no exiv2-config script anymore
 
- -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Fri, 13 Apr 2007 17:08:39 +0200
+ -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Wed,  2 May 2007 22:59:26 +0200
 
 exiv2 (0.12-1) unstable; urgency=low
 
