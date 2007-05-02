@@ -2,8 +2,11 @@ exiv2 (0.14-1) UNRELEASED; urgency=low
 
   * NOT RELEASED YET (needs upload to experimental due to new API)
 
-  * TODO: check which -dev pkgs libexiv2-dev header files are included
-    and Depend on them.
+  * TODO:
+    + check which -dev pkgs libexiv2-dev header files are included
+      and Depend on them.
+    + ARGL, exiv2 still contains HTML files. Compare with new -doc upstream
+      tarball  (undo -doc pkg removal if necessary)
 
   * new upstream release
 
@@ -14,6 +17,7 @@ exiv2 (0.14-1) UNRELEASED; urgency=low
     + Etch does not have a libexiv2 package.  So remove Replaces/Conflict.
     + Remove -doc package. With 0.14 docs are in a separate tarball.
     + libexiv2-dev: No need to depend on ${shlibs:Depends}, ${misc:Depends}
+  * debian/exiv2.1 removed: included upstream.
 
  -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Wed,  2 May 2007 22:59:26 +0200
 
