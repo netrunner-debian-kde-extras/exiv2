@@ -2,13 +2,18 @@ exiv2 (0.14-1) UNRELEASED; urgency=low
 
   * NOT RELEASED YET (needs upload to experimental due to new API)
 
+  * TODO: check which -dev pkgs libexiv2-dev header files are included
+    and Depend on them.
+
   * new upstream release
 
   [ Achim Bohnet ]
   * 0.14 changed API: rename libexiv2-0.12 to libexiv2-0 accordingly.
-  * Remove -doc package. With 0.14 docs are in a separate tarball.
   * libexiv2-dev: exiv2 has no exiv2-config script anymore.
-  * Etch does not have a libexiv2 package.  So remove Replaces/Conflict.
+  * debian/control:
+    + Etch does not have a libexiv2 package.  So remove Replaces/Conflict.
+    + Remove -doc package. With 0.14 docs are in a separate tarball.
+    + libexiv2-dev: No need to depend on ${shlibs:Depends}, ${misc:Depends}
 
  -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Wed,  2 May 2007 22:59:26 +0200
 
