@@ -18,6 +18,7 @@ exiv2 (0.14-1) UNRELEASED; urgency=low
     + Remove -doc package. With 0.14 docs are in a separate tarball.
     + libexiv2-dev: No need to depend on ${shlibs:Depends}, ${misc:Depends}
   * debian/exiv2.1 removed: included upstream.
+  * debian/libexiv2-0: install message catalogs
 
  -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Wed,  2 May 2007 22:59:26 +0200
 
