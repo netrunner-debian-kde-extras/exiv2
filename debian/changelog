@@ -7,8 +7,9 @@ exiv2 (0.14-1) UNRELEASED; urgency=low
       and Depend on them.
     + ARGL, exiv2 still contains HTML files. Compare with new -doc upstream
       tarball  (undo -doc pkg removal if necessary)
+    + #417176: FTBFS with GCC 4.3: missing #includes 
 
-  * new upstream release
+  * new upstream release (Closes: #414372)
 
   [ Achim Bohnet ]
   * 0.14 changed API: rename libexiv2-0.12 to libexiv2-0 accordingly.
