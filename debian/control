@@ -29,8 +29,6 @@ Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Recommends: exiv2
-Replaces: libexiv2
-Conflicts: libexiv2
 Description: EXIF/IPTC metadata manipulation library
  Exiv2 library supports:
   * full read and write access to the EXIF and IPTC metadata of an image
