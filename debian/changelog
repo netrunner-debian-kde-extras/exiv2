@@ -7,7 +7,7 @@ exiv2 (0.14-1) UNRELEASED; urgency=low
       and Depend on them.
     + ARGL, exiv2 still contains HTML files. Compare with new -doc upstream
       tarball  (undo -doc pkg removal if necessary)
-    + #417176: FTBFS with GCC 4.3: missing #includes 
+    + #417176: FTBFS with GCC 4.3: missing #includes
 
   * new upstream release (Closes: #414372)
 
@@ -21,7 +21,10 @@ exiv2 (0.14-1) UNRELEASED; urgency=low
   * debian/exiv2.1 removed: included upstream.
   * debian/libexiv2-0: install message catalogs
 
- -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Wed,  2 May 2007 22:59:26 +0200
+  [ Mark Purcell ]
+  * FTBFS with GCC 4.3: missing #includes (Closes: #417176)
+
+ -- Mark Purcell <mark@purcell.id.au>  Tue, 08 May 2007 21:14:47 +0100
 
 exiv2 (0.12-1) unstable; urgency=low
 
