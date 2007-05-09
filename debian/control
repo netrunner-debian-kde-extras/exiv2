@@ -3,7 +3,7 @@ Section: graphics
 Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: KELEMEN Peter <fuji@debian.org>, Mark Purcell <msp@debian.org>
-Build-Depends: debhelper (>= 4.0.0), g++ (>= 4.0.0), autotools-dev, chrpath, dpkg-dev (>= 1.13.19), zlib1g-dev, cdbs
+Build-Depends: debhelper (>= 4.0.0), g++ (>= 4.0.0), autotools-dev, chrpath, dpkg-dev (>= 1.13.19), zlib1g-dev, cdbs, gettext
 Standards-Version: 3.7.2
 
 Package: exiv2

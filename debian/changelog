@@ -22,8 +22,9 @@ exiv2 (0.14-1) UNRELEASED; urgency=low
 
   [ Mark Purcell ]
   * FTBFS with GCC 4.3: missing #includes (Closes: #417176)
+  * Build-Depends: gettext
 
- -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Tue, 08 May 2007 22:21:42 +0100
+ -- Mark Purcell <msp@debian.org>  Wed, 09 May 2007 07:06:46 +0100
 
 exiv2 (0.12-1) unstable; urgency=low
 
