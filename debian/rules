@@ -8,6 +8,9 @@ include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/autotools.mk
 include /usr/share/cdbs/1/rules/simple-patchsys.mk
 
+build/libexiv2-dev::
+	$(MAKE) docs
+
 install/exiv2::
 	/usr/bin/chrpath -d $(CURDIR)/debian/tmp/usr/bin/exiv2
 

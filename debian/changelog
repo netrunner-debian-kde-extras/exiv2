@@ -7,17 +7,19 @@ exiv2 (0.14-1) unstable; urgency=low
   * libexiv2-dev: exiv2 has no exiv2-config script anymore.
   * debian/control:
     + Etch does not have a libexiv2 package.  So remove Replaces/Conflict.
-    + Remove -doc package. With 0.14 docs are in a separate tarball.
     + libexiv2-dev: No need to depend on ${shlibs:Depends}, ${misc:Depends}
   * debian/exiv2.1 removed: included upstream.
   * debian/libexiv2-0: install message catalogs
 
   [ Mark Purcell ]
   * FTBFS with GCC 4.3: missing #includes (Closes: #417176)
-  * Build-Depends: gettext
-  * Build-Depends: doxygen
+  * Build-Depends: doxygen, graphviz, python, xsltproc
+  * Reinstate libexiv2-doc, better to build with doxygen than other tarball
+  * Rework debian/libexiv2-dev.install
+  * Rework debian/libexiv2-doc.docs
+  * Add build/libexiv2-dev:: to debian/rules
 
- -- Mark Purcell <msp@debian.org>  Wed, 09 May 2007 21:40:25 +0100
+ -- Mark Purcell <msp@debian.org>  Wed, 09 May 2007 22:25:38 +0100
 
 exiv2 (0.12-1) unstable; urgency=low
 
