@@ -12,7 +12,7 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: EXIF/IPTC metadata manipulation tool
  Exiv2 can:
-.
+ .
   * print the Exif metadata of JPEG, TIFF and several RAW image formats as
     summary info, interpreted values, or the plain data for each tag
   * print the IPTC metadata of JPEG images
@@ -23,7 +23,7 @@ Description: EXIF/IPTC metadata manipulation tool
   * extract, insert and delete Exif metadata, IPTC metadata and JPEG comments
   * extract, insert and delete the thumbnail image embedded in the Exif metadata
   * fix the Exif ISO setting of picture taken with Nikon cameras
-.
+ .
   Homepage: http://www.exiv2.org/
 
 Package: libexiv2-0
