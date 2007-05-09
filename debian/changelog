@@ -1,12 +1,4 @@
-exiv2 (0.14-1) UNRELEASED; urgency=low
-
-  * NOT RELEASED YET (needs upload to experimental due to new API)
-
-  * TODO:
-    + check which -dev pkgs libexiv2-dev header files are included
-      and Depend on them.
-    + ARGL, exiv2 still contains HTML files. Compare with new -doc upstream
-      tarball  (undo -doc pkg removal if necessary)
+exiv2 (0.14-1) unstable; urgency=low
 
   * new upstream release (Closes: #414372)
 
@@ -24,7 +16,7 @@ exiv2 (0.14-1) UNRELEASED; urgency=low
   * FTBFS with GCC 4.3: missing #includes (Closes: #417176)
   * Build-Depends: gettext
 
- -- Mark Purcell <msp@debian.org>  Wed, 09 May 2007 07:06:46 +0100
+ -- Mark Purcell <msp@debian.org>  Wed, 09 May 2007 07:09:29 +0100
 
 exiv2 (0.12-1) unstable; urgency=low
 
