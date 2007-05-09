@@ -15,11 +15,12 @@ exiv2 (0.14-1) unstable; urgency=low
   * FTBFS with GCC 4.3: missing #includes (Closes: #417176)
   * Build-Depends: doxygen, graphviz, python, xsltproc
   * Reinstate libexiv2-doc, better to build with doxygen than other tarball
+  * Add build/libexiv2-doc:: to debian/rules
   * Rework debian/libexiv2-dev.install
   * Rework debian/libexiv2-doc.docs
-  * Add build/libexiv2-dev:: to debian/rules
+  * Rework debian/libexiv2-0.install
 
- -- Mark Purcell <msp@debian.org>  Wed, 09 May 2007 22:25:38 +0100
+ -- Mark Purcell <msp@debian.org>  Wed, 09 May 2007 22:28:37 +0100
 
 exiv2 (0.12-1) unstable; urgency=low
 
