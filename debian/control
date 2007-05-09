@@ -3,7 +3,7 @@ Section: graphics
 Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: KELEMEN Peter <fuji@debian.org>, Mark Purcell <msp@debian.org>
-Build-Depends: debhelper (>= 4.0.0), g++ (>= 4.0.0), autotools-dev, chrpath, dpkg-dev (>= 1.13.19), zlib1g-dev, cdbs, gettext
+Build-Depends: debhelper (>= 4.0.0), g++ (>= 4.0.0), autotools-dev, chrpath, dpkg-dev (>= 1.13.19), zlib1g-dev, cdbs, gettext, doxygen
 Standards-Version: 3.7.2
 
 Package: exiv2
@@ -12,17 +12,19 @@ Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: EXIF/IPTC metadata manipulation tool
  Exiv2 can:
-  * print the EXIF metadata of JPEG images as summary info, interpreted values,
-    or the plain data for each tag (here is a sample)
+.
+  * print the Exif metadata of JPEG, TIFF and several RAW image formats as
+    summary info, interpreted values, or the plain data for each tag
   * print the IPTC metadata of JPEG images
-  * print the JPEG comment of JPEG images
-  * set, add and delete EXIF and IPTC metadata of JPEG images
-  * adjust the EXIF timestamp (that's how it all started...)
-  * rename EXIF image files according to the EXIF timestamp
-  * extract EXIF metadata, IPTC metadata and JPEG comments from image files and
-    insert it again
-  * extract the thumbnail image embedded in the EXIF metadata
-  * delete the thumbnail or the complete EXIF metadata from an image
+  * print, set and delete the JPEG comment of JPEG images
+  * set, add and delete Exif and IPTC metadata of JPEG images 
+  * adjust the Exif timestamp (that's how it all started...)
+  * rename Exif image files according to the Exif timestamp
+  * extract, insert and delete Exif metadata, IPTC metadata and JPEG comments
+  * extract, insert and delete the thumbnail image embedded in the Exif metadata
+  * fix the Exif ISO setting of picture taken with Nikon cameras
+.
+  Homepage: http://www.exiv2.org/
 
 Package: libexiv2-0
 Section: libs
