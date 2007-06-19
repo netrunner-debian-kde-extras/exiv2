@@ -1,8 +1,11 @@
-exiv2 (0.14-2) UNRELEASED; urgency=low
+exiv2 (0.14-2) unstable; urgency=medium
 
-  * NOT RELEASED YET
+  * DebConf7 release :-)
+  * Urgency medium as this fixes a number of crashes in digikam et al
+  * Pull in upstream fixes for jpeg/tiff MSC makernote crashes
+    (rev 1106/1124)
 
- -- Mark Purcell <msp@debian.org>  Wed, 09 May 2007 22:46:24 +0100
+ -- Mark Purcell <msp@debian.org>  Tue, 19 Jun 2007 12:55:55 +0100
 
 exiv2 (0.14-1) unstable; urgency=low
 
