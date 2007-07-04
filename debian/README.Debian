@@ -113,7 +113,7 @@ As the autobuilder and fellow developers will need to differentiate between
 versions that are uploaded into debian already and those which will be at a
 later point, do use the UNRELEASED distribution until the time you actually do
 upload to incoming. Whoever is not a DD himself should let the sponsor do that
-final step if that sponsor has SVN commit rights to the pkg-voip archive.
+final step if that sponsor has SVN commit rights to the kde-extras archive.
 
 The autobuilder packs can be found at http://kde-extras.buildserver.net/.
 The logs can be found at http://status.buildserver.net/.
@@ -133,6 +133,12 @@ directory and made executable by means of the svn properties set. The codenames
 for the current dists are: sid, etch, sarge, edgy and dapper. For an example
 see asterisk-addons/trunk/debian/backports/sarge which may be more illustrating
 what to do.
+
+8. Autotools, libtool, am_maintainer, buildprep and configure updates
+---------------------------------------------------------------------
+
+Achim, Please add some text in here to document when it is necessary and
+how we update the build enviroment for a package.
 
 -(snip)-
 
