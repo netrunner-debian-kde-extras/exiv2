@@ -1,9 +1,9 @@
-exiv2 (0.15-1) UNRELEASED; urgency=low
+exiv2 (0.15-1) unstable; urgency=low
 
-  * (NOT RELEASED YET) New upstream release
+  * New upstream release
     - maintenance release, support for Minolta G500 RAW files
 
- -- Mark Purcell <msp@debian.org>  Sun, 22 Jul 2007 12:12:21 +0100
+ -- Mark Purcell <msp@debian.org>  Sun, 22 Jul 2007 12:20:57 +0100
 
 exiv2 (0.14-2) unstable; urgency=medium
 
