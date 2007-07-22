@@ -3,7 +3,4 @@
 # Compulsory line, this is a version 3 file
 version=3
 
-# Uncomment to examine a Webpage 
-# <Webpage URL> <string match>
-#http://www.example.com/downloads.php #PACKAGE#-(.*)\.tar\.gz
-http://www.exiv2.org/download.html exiv2-(.*)\.tar\.gz
+http://www.exiv2.org/download.html exiv2-(.*[\d])\.tar\.gz debian svn-upgrade
