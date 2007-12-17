@@ -1,8 +1,11 @@
-exiv2 (0.16~pre1-1) UNRELEASED; urgency=low
+exiv2 (0.15-2) unstable; urgency=high
 
-  * (NOT RELEASED YET) New upstream release
+  [Ana Beatriz Guerrero Lopez]
+  * Team upload to fix security bug.
+  * Add patch to fix integer overflow in EXIF parsing.
+    CVE-2007-6353 (Closes: #456760)
 
- -- Mark Purcell <msp@debian.org>  Sat, 10 Nov 2007 09:22:23 +0000
+ -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Mon, 17 Dec 2007 19:13:11 +0100
 
 exiv2 (0.15-1) unstable; urgency=low
 
