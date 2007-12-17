@@ -1,3 +1,9 @@
+exiv2 (0.16~pre1-1) UNRELEASED; urgency=low
+
+  * (NOT RELEASED YET) New upstream release
+
+ -- Mark Purcell <msp@debian.org>  Mon, 17 Dec 2007 19:37:48 +0100
+
 exiv2 (0.15-2) unstable; urgency=high
 
   [Ana Beatriz Guerrero Lopez]
