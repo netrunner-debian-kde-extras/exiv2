@@ -4,20 +4,25 @@ FILENAME = $(DEB_SOURCE_PACKAGE)_$(DEB_UPSTREAM_VERSION).orig.tar.gz
 UPFILENAME = $(DEB_SOURCE_PACKAGE)-$(DEB_UPSTREAM_VERSION).tar.gz
 URL = http://www.exiv2.org/$(UPFILENAME)
 
-include /usr/share/cdbs/1/rules/debhelper.mk
 include /usr/share/cdbs/1/class/autotools.mk
-include /usr/share/cdbs/1/rules/simple-patchsys.mk
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/rules/patchsys-quilt.mk
+include /usr/share/cdbs/1/rules/utils.mk
+
+DEB_INSTALL_CHANGELOGS_ALL := doc/ChangeLog
+DEB_COMPRESS_EXCLUDE := .xls .js .idx .xml .php
+DEB_INSTALL_DOCS_ALL := -Xcmd.txt -XMakefile -Xtemplates -XChangeLog
+DEB_CONFIGURE_EXTRA_FLAGS := --disable-rpath
+DEB_CONFIGURE_SCRIPT_ENV += LDFLAGS="-Wl,--no-undefined -Wl,--as-needed"
 
 build/libexiv2-doc::
-	$(MAKE) doc
+	[ ! -f Makefile ] || $(MAKE) doc
 
 install/exiv2::
 	/usr/bin/chrpath -d $(CURDIR)/debian/tmp/usr/bin/exiv2
 
-DEB_INSTALL_CHANGELOGS_ALL := doc/ChangeLog
-DEB_COMPRESS_EXCLUDE :=  .xls .js .idx .xml .php
-DEB_INSTALL_DOCS_ALL := -Xcmd.txt -XMakefile -Xtemplates -XChangeLog
-DEB_CONFIGURE_EXTRA_FLAGS := --disable-rpath
+clean::
+	[ ! -f Makefile ] || $(MAKE) maintainer-clean
 
 get-orig-source:
 	@@dh_testdir
@@ -32,3 +37,4 @@ print-version:
 	@@echo DEB_UPSTREAM_VERSION: $(DEB_UPSTREAM_VERSION)
 	@@echo FILENAME: $(FILENAME)
 	@@echo URL: $(URL)
+

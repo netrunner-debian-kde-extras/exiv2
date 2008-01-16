@@ -2,9 +2,12 @@ Source: exiv2
 Section: graphics
 Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
-Uploaders: KELEMEN Peter <fuji@debian.org>, Mark Purcell <msp@debian.org>
-Build-Depends: debhelper (>= 4.0.0), g++ (>= 4.0.0), autotools-dev, chrpath, dpkg-dev (>= 1.13.19), zlib1g-dev, cdbs, doxygen, graphviz, python, xsltproc
-Standards-Version: 3.7.2
+Uploaders: KELEMEN Peter <fuji@debian.org>, Mark Purcell <msp@debian.org>, Fathi Boudra <fabo@debian.org>
+Build-Depends: cdbs, debhelper (>= 5), quilt, chrpath,
+ autotools-dev, libexpat1-dev, zlib1g-dev,
+ doxygen, graphviz, python, xsltproc
+Standards-Version: 3.7.3
+Homepage: http://www.exiv2.org
 
 Package: exiv2
 Section: graphics
@@ -17,19 +20,19 @@ Description: EXIF/IPTC metadata manipulation tool
     summary info, interpreted values, or the plain data for each tag
   * print the IPTC metadata of JPEG images
   * print, set and delete the JPEG comment of JPEG images
-  * set, add and delete Exif and IPTC metadata of JPEG images 
+  * set, add and delete Exif and IPTC metadata of JPEG images
   * adjust the Exif timestamp (that's how it all started...)
   * rename Exif image files according to the Exif timestamp
   * extract, insert and delete Exif metadata, IPTC metadata and JPEG comments
   * extract, insert and delete the thumbnail image embedded in the Exif metadata
   * fix the Exif ISO setting of picture taken with Nikon cameras
- .
-  Homepage: http://www.exiv2.org/
 
-Package: libexiv2-0
+Package: libexiv2-2
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: libexiv2c2a, libexiv2-0.12, libexiv2-0
+Replaces: libexiv2c2a, libexiv2-0.12, libexiv2-0
 Recommends: exiv2
 Description: EXIF/IPTC metadata manipulation library
  Exiv2 library supports:
@@ -51,7 +54,7 @@ Description: EXIF/IPTC metadata manipulation library
 Package: libexiv2-dev
 Section: libdevel
 Architecture: any
-Depends: libexiv2-0 (= ${binary:Version}), pkg-config
+Depends: libexiv2-2 (= ${binary:Version}), pkg-config
 Suggests: libexiv2-doc
 Description: EXIF/IPTC metadata manipulation library - development files
  Exiv2 C++ header files.
