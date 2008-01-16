@@ -11,13 +11,13 @@ Copyright:
 
     (C) 2004-2008 Andreas Huggel <ahuggel@gmx.net>
 
-Copyright for MD5 algorithm tcode:
-
-    (C) 1991-2, RSA Data Security, Inc.
-
 Copyright for XMP sdk:
 
     (C) 2005-2007 Adobe Systems Incorporated
+
+Copyright for MD5 algorithm tcode:
+
+    (C) 1991-2, RSA Data Security, Inc.
 
 exiv2 license:
 
@@ -42,153 +42,61 @@ exiv2 license:
 On Debian systems, the complete text of the GNU General
 Public License can be found in `/usr/share/common-licenses/GPL'.
 
-MD5 algorithm license:
-
-    MD5C.C - RSA Data Security, Inc., MD5 message-digest algorithm
-
-    Copyright (C) 1991-2, RSA Data Security, Inc. Created 1991. All rights
-    reserved.
-
-    License to copy and use this software is granted provided that it is
-    identified as the "RSA Data Security, Inc. MD5 Message-Digest Algorithm" in
-    all material mentioning or referencing this software or this function.
-
-    License is also granted to make and use derivative works provided that such
-    works are identified as "derived from the RSA Data Security, Inc. MD5
-    Message-Digest Algorithm" in all material mentioning or referencing the
-    derived work.
-
-    RSA Data Security, Inc. makes no representations concerning either the
-    merchantability of this software or the suitability of this software for
-    any particular purpose. It is provided "as is" without express or implied
-    warranty of any kind.
-
-    These notices must be retained in any copies of any part of this
-    documentation and/or software.
-
 XMP sdk license:
 
     NOTICE: Adobe permits you to use, modify, and distribute this file in
     accordance with the terms of the Adobe license agreement accompanying it.
 
-ADOBE SYSTEMS INCORPORATED
+Copyright (c) 1999 - 2007, Adobe Systems Incorporated
 
-OPEN SOURCE LICENSE
+The BSD License
 
-NOTICE TO USER:  Adobe Systems Incorporated is providing the Software and 
-Documentation for use under the terms of this Agreement.  Any use, reproduction, 
-modification or distribution of the Software or Documentation, or any 
-derivatives or portions thereof, constitutes your acceptance of this Agreement.
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
 
-As used in this Agreement, "Adobe" means Adobe Systems Incorporated.  "Software" 
-means the software code accompanying this Agreement.   "Documentation" means the 
-documents, specifications and all other items accompanying this Agreement other 
-than the Software.   
+* Redistributions of source code must retain the above copyright
+  notice, this list of conditions and the following disclaimer.
 
-1.  LICENSE GRANT
-Subject to the terms of this Agreement, Adobe hereby grants you 
-a non-exclusive, worldwide, royalty free license to use, reproduce, prepare 
-derivative works from, publicly display, publicly perform, distribute and 
-sublicense the Software for any purpose, provided the copyright notice below 
-appears in a conspicuous location within the source code of the distributed 
-Software and this license is distributed in the supporting documentation of the 
-Software you distribute.
+* Redistributions in binary form must reproduce the above copyright
+  notice, this list of conditions and the following disclaimer in the
+  documentation and/or other materials provided with the distribution.
 
-Copyright (date here) Adobe Systems Incorporated and others.  All rights 
-reserved.  The original version of this source code may be found at 
-http://adobe.com.
+* Neither the name of Adobe Systems Incorporated, nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
 
-Subject to the terms of this Agreement, Adobe hereby grants you a non-exclusive, 
-worldwide, royalty free license to use, reproduce, publicly display, publicly 
-perform, distribute and sublicense the Documentation  for any purpose.  You may 
-not modify the Documentation.
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-No title to the intellectual property in the Software or Documentation is 
-transferred to you under the terms of this Agreement.  You do not acquire any 
-rights to the Software or the Documentation except as expressly set forth in 
-this Agreement.
+MD5 algorithm license:
 
-If you choose to distribute the Software in a commercial product, you do so with 
-the understanding that you agree to defend, indemnify and hold harmless Adobe 
-against any losses, damages and costs arising from the claims, lawsuits or other 
-legal actions arising out of such distribution.  You may distribute the Software 
-in object code form under your own license, provided that your license 
-agreement:
+Copyright (C) 1991-2, RSA Data Security, Inc.
 
-(a) 	complies with the terms and conditions of this license agreement; 
+License to copy and use this software is granted provided that it is
+identified as the "RSA Data Security, Inc. MD5 Message-Digest
+Algorithm" in all material mentioning or referencing this software or
+this function.
 
-(b) 	effectively disclaims all warranties and conditions, express or implied, 
-on behalf of Adobe;
+License is also granted to make and use derivative works provided that
+such works are identified as "derived from the RSA Data Security,
+Inc. MD5 Message-Digest Algorithm" in all material mentioning or
+referencing the derived work.
 
-(c) 	effectively excludes all liability for damages on behalf of Adobe;
+RSA Data Security, Inc. makes no representations concerning either the
+merchantability of this software or the suitability of this software
+for any particular purpose. It is provided "as is" without express or
+implied warranty of any kind.
 
-(d) 	states that any provisions that differ from this Agreement are offered by 
-you alone and not Adobe; and
-
-(e) 	states that the Software is available from you or Adobe and informs 
-licensees how to obtain it in a reasonable manner on or through a medium 
-customarily used for software exchange.  
-
-2.  DISCLAIMER OF WARRANTY
-ADOBE LICENSES THE SOFTWARE AND DOCUMENTATION TO YOU ONLY ON AN "AS IS" BASIS 
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, 
-INCLUDING WITHOUT LIMITATION ANY WARRANTIES OR CONDITIONS OF TITLE, NON-
-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  ADOBE MAKES 
-NO WARRANTY THAT THE SOFTWARE OR DOCUMENTATION WILL BE ERROR-FREE.  Each user of 
-the Software or Documentation is solely responsible for determining the 
-appropriateness of using and distributing the Software and Documentation and 
-assumes all risks associated with its exercise of rights under this Agreement, 
-including but not limited to the risks and costs of program errors, compliance 
-with applicable laws, damage to or loss of data, programs, or equipment, and 
-unavailability or interruption of operations.  Use of the Software and 
-Documentation is made with the understanding that Adobe will not provide you 
-with any technical or customer support or maintenance.  Some states or 
-jurisdictions do not allow the exclusion of implied warranties or limitations on 
-how long an implied warranty may last, so the above limitations may not apply to 
-you.  To the extent permissible, any implied warranties are limited to ninety 
-(90) days.
-
-
-3.  LIMITATION OF LIABILITY
-ADOBE AND ITS SUPPLIERS SHALL NOT BE LIABLE FOR LOSS OR DAMAGE ARISING OUT OF 
-THIS AGREEMENT OR FROM THE USE OF THE SOFTWARE OR DOCUMENTATION.  IN NO EVENT 
-WILL ADOBE BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY DIRECT, INDIRECT, 
-CONSEQUENTIAL, INCIDENTAL, OR SPECIAL DAMAGES INCLUDING LOST PROFITS, LOST 
-SAVINGS, COSTS, FEES, OR EXPENSES OF ANY KIND ARISING OUT OF ANY PROVISION OF 
-THIS AGREEMENT OR THE USE OR THE INABILITY TO USE THE SOFTWARE OR DOCUMENTATION, 
-HOWEVER CAUSED AND UNDER ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT 
-LIABILITY OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE), EVEN IF ADVISED OF THE 
-POSSIBILITY OF SUCH DAMAGES.  ADOBE'S AGGREGATE LIABILITY AND THAT OF ITS 
-SUPPLIERS UNDER OR IN CONNECTION WITH THIS AGREEMENT SHALL BE LIMITED TO THE 
-AMOUNT PAID BY YOU FOR THE SOFTWARE AND DOCUMENTATION. 
-
-4.  TRADEMARK USAGE
-Adobe and XMP are the trademarks or registered trademarks of Adobe Systems 
-Incorporated in the United States and other countries.  Such trademarks may not 
-be used to endorse or promote any product unless expressly permitted under 
-separate agreement with Adobe.  
-
-5.  TERM
-Your rights under this Agreement shall terminate if you fail to comply with any 
-of the material terms or conditions of this Agreement and do not cure such 
-failure in a reasonable period of time after becoming aware of such 
-noncompliance.  If all your rights under this Agreement terminate, you agree to 
-cease use and distribution of the Software and Documentation as soon as 
-reasonably practicable. 
-
-6. GOVERNING LAW AND JURISDICTION. This Agreement is governed by the statutes 
-and laws of the State of California, without regard to the conflicts of law 
-principles thereof.  If any part of this Agreement is found void and 
-unenforceable, it will not affect the validity of the balance of the Agreement, 
-which shall remain valid and enforceable according to its terms.  Any dispute 
-arising out of or related to this Agreement shall be brought in the courts of 
-Santa Clara County, California, USA. 
-
-7.  GENERAL
-You acknowledge that you have read this Agreement, understand it, and that it is 
-the complete and exclusive statement of your agreement with Adobe which 
-supersedes any prior agreement, oral or written, between Adobe and you with 
-respect to the licensing to you of the Software and Documentation. No variation 
-of the terms of this Agreement will be enforceable against Adobe unless Adobe 
-gives its express consent in writing signed by an authorized signatory of Adobe.
+These notices must be retained in any copies of any part of this
+documentation and/or software.
 
