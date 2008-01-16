@@ -22,7 +22,7 @@ install/exiv2::
 	/usr/bin/chrpath -d $(CURDIR)/debian/tmp/usr/bin/exiv2
 
 clean::
-	[ ! -f Makefile ] || $(MAKE) maintainer-clean
+	rm -rf doc/html
 
 get-orig-source:
 	@@dh_testdir
