@@ -5,17 +5,15 @@ exiv2 (0.16-1) unstable; urgency=low
     * CVE-2007-6353
     * Rev 1124 pull
   * Add 01_gcc4.3.diff patch. Missing std:: removal not merged upstream yet
-  * Bump compat to 5
+  * Bump compat to 6
   * Update copyright file
   * Add myself in Uploaders field
   * Clean up build dependencies:
     * Remove g++ and dpkg-dev
     * Add quilt and libexpat1-dev
+    * Bump debhelper to 6
   * Bump Standard-Version to 3.7.3
   * Use Homepage field
-  * Merge changes from Ubuntu:
-    * Add conflicts and replaces of libexiv2c2a, libexiv2-0.12 on libexiv2-0
-      so that digikam does not get held back on upgrades.
   * Add Conflicts/Replaces libexiv2-0 for libexiv2-2
   * Clean up rules
   * Add clean target (Closes: 442560)

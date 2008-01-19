@@ -3,7 +3,7 @@ Section: graphics
 Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: KELEMEN Peter <fuji@debian.org>, Mark Purcell <msp@debian.org>, Fathi Boudra <fabo@debian.org>
-Build-Depends: cdbs, debhelper (>= 5), quilt, chrpath,
+Build-Depends: cdbs, debhelper (>= 6), quilt, chrpath,
  autotools-dev, libexpat1-dev, zlib1g-dev,
  doxygen, graphviz, python, xsltproc
 Standards-Version: 3.7.3
@@ -31,8 +31,8 @@ Package: libexiv2-2
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Conflicts: libexiv2c2a, libexiv2-0.12, libexiv2-0
-Replaces: libexiv2c2a, libexiv2-0.12, libexiv2-0
+Conflicts: libexiv2-0
+Replaces: libexiv2-0
 Recommends: exiv2
 Description: EXIF/IPTC metadata manipulation library
  Exiv2 library supports:
