@@ -33,8 +33,6 @@ Package: libexiv2-2
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Conflicts: libexiv2-0
-Replaces: libexiv2-0
 Recommends: exiv2
 Description: EXIF/IPTC metadata manipulation library
  Exiv2 library supports:

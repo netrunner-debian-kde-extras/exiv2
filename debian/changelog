@@ -1,3 +1,15 @@
+exiv2 (0.16-3) unstable; urgency=low
+
+  * Remove Conflicts/Replaces libexiv2-0 for libexiv2-2. (Closes: #463852)
+
+ -- Fathi Boudra <fabo@debian.org>  Tue, 05 Feb 2008 00:52:35 +0100
+
+exiv2 (0.16-2) unstable; urgency=low
+
+  * Remove Conflicts/Replaces libexiv2-0 for libexiv2-2. (Closes: #463852)
+
+ -- Fathi Boudra <fabo@debian.org>  Mon, 04 Feb 2008 15:39:20 +0100
+
 exiv2 (0.16-1) unstable; urgency=low
 
   * New upstream release (Closes: #441524, #455633, #461009)
