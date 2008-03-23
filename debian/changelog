@@ -1,3 +1,13 @@
+exiv2 (0.16-4) unstable; urgency=low
+
+  [Ana Beatriz Guerrero Lopez]
+  
+  * Team upload to address FTBFS with GCC 4.3.
+  * Apply patch by Cyril Brulebois to fix FTBFS with GCC 4.3.
+    (Closes: #466901)
+
+ -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Sun, 23 Mar 2008 15:42:16 +0100
+
 exiv2 (0.16-3) unstable; urgency=low
 
   * Remove Conflicts/Replaces libexiv2-0 for libexiv2-2. (Closes: #463852)
