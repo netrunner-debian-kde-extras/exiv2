@@ -4,6 +4,8 @@ exiv2 (0.17-1) UNRELEASED; urgency=low
   * New upstream release
   * Switch to simple-patchsys.mk
   * Refresh & merge gcc4.3 patches
+  * New Package: libexiv2-4 - soname bump
+  * Add exiv2 Depends: libexiv2-4 (= ${binary:Version})
 
  -- Mark Purcell <msp@debian.org>  Tue, 10 Jun 2008 18:28:11 +1000
 

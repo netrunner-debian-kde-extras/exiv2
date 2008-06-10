@@ -14,7 +14,7 @@ Vcs-Svn: svn://svn.debian.org/pkg-kde/kde-extras/exiv2/trunk
 Package: exiv2
 Section: graphics
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, libexiv2-4 (= ${binary:Version})
 Description: EXIF/IPTC metadata manipulation tool
  Exiv2 can:
  .
@@ -29,7 +29,7 @@ Description: EXIF/IPTC metadata manipulation tool
   * extract, insert and delete the thumbnail image embedded in the Exif metadata
   * fix the Exif ISO setting of picture taken with Nikon cameras
 
-Package: libexiv2-2
+Package: libexiv2-4
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
@@ -54,7 +54,7 @@ Description: EXIF/IPTC metadata manipulation library
 Package: libexiv2-dev
 Section: libdevel
 Architecture: any
-Depends: libexiv2-2 (= ${binary:Version}), pkg-config
+Depends: libexiv2-4 (= ${binary:Version}), pkg-config
 Suggests: libexiv2-doc
 Description: EXIF/IPTC metadata manipulation library - development files
  Exiv2 C++ header files.
