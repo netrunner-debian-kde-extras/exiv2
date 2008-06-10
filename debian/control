@@ -3,8 +3,9 @@ Section: graphics
 Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: KELEMEN Peter <fuji@debian.org>, Mark Purcell <msp@debian.org>, Fathi Boudra <fabo@debian.org>
-Build-Depends: cdbs, debhelper (>= 6), quilt, chrpath,
+Build-Depends: cdbs, debhelper (>= 6), chrpath,
  autotools-dev, libexpat1-dev, zlib1g-dev,
+ libexpat1-dev,
  doxygen, graphviz, python, xsltproc
 Standards-Version: 3.7.3
 Homepage: http://www.exiv2.org
@@ -14,7 +15,7 @@ Vcs-Svn: svn://svn.debian.org/pkg-kde/kde-extras/exiv2/trunk
 Package: exiv2
 Section: graphics
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libexiv2-4 (= ${binary:Version})
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: EXIF/IPTC metadata manipulation tool
  Exiv2 can:
  .
