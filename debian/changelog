@@ -1,12 +1,13 @@
-exiv2 (0.17-1) UNRELEASED; urgency=low
+exiv2 (0.17-1) experimental; urgency=low
 
   * New upstream release
   * Switch to simple-patchsys.mk
   * Refresh & merge gcc4.3 patches
   * New Package: libexiv2-4 - soname bump
   * Add Build-Depends: libexpat1-dev
+  * Upload to experimental to clear NEW processing
 
- -- Mark Purcell <msp@debian.org>  Tue, 10 Jun 2008 21:15:11 +1000
+ -- Mark Purcell <msp@debian.org>  Tue, 10 Jun 2008 23:05:33 +1000
 
 exiv2 (0.16-4) unstable; urgency=low
 
