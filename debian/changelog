@@ -1,6 +1,11 @@
-exiv2 (0.17-2) UNRELEASED; urgency=low
+exiv2 (0.17-2) UNRELEASED; urgency=medium
 
   * NOT RELEASED YET
+  * Version 0.17 also fixes:
+    - CVE-2008-2696: DoS via metadata in images (Closes: #486328)
+    - crashes when fed with wrong file (Closes: #485670)
+  * Urgency medium for CVE fix
+  * debian/patches/gcc4.3.diff unecessary for gcc-4.3
 
  -- Mark Purcell <msp@debian.org>  Thu, 12 Jun 2008 21:22:09 +1000
 
