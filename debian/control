@@ -30,7 +30,7 @@ Description: EXIF/IPTC metadata manipulation tool
   * extract, insert and delete the thumbnail image embedded in the Exif metadata
   * fix the Exif ISO setting of picture taken with Nikon cameras
 
-Package: libexiv2-4
+Package: libexiv2-5
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
@@ -55,7 +55,7 @@ Description: EXIF/IPTC metadata manipulation library
 Package: libexiv2-dev
 Section: libdevel
 Architecture: any
-Depends: libexiv2-4 (= ${binary:Version}), pkg-config
+Depends: libexiv2-5 (= ${binary:Version}), pkg-config
 Suggests: libexiv2-doc
 Description: EXIF/IPTC metadata manipulation library - development files
  Exiv2 C++ header files.
