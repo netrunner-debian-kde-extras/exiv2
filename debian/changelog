@@ -2,8 +2,9 @@ exiv2 (0.18~pre2-1) UNRELEASED; urgency=low
 
   * New upstream release
   * NEW package libexiv2-5 - match upstream soname
+  * Update Standards Version 3.8.0 - no changes
 
- -- Mark Purcell <msp@debian.org>  Sat, 08 Nov 2008 10:41:07 +1100
+ -- Mark Purcell <msp@debian.org>  Sat, 08 Nov 2008 10:42:37 +1100
 
 exiv2 (0.17.1-1) unstable; urgency=medium
 

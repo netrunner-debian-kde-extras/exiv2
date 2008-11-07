@@ -7,7 +7,7 @@ Build-Depends: cdbs, debhelper (>= 6), chrpath,
  autotools-dev, libexpat1-dev, zlib1g-dev,
  libexpat1-dev,
  doxygen, graphviz, python, xsltproc
-Standards-Version: 3.7.3
+Standards-Version: 3.8.0
 Homepage: http://www.exiv2.org
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/kde-extras/exiv2/trunk
 Vcs-Svn: svn://svn.debian.org/pkg-kde/kde-extras/exiv2/trunk
