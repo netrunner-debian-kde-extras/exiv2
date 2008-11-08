@@ -1,3 +1,9 @@
+exiv2 (0.18~pre2-2) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Mark Purcell <msp@debian.org>  Sat, 08 Nov 2008 13:08:08 +1100
+
 exiv2 (0.18~pre2-1) experimental; urgency=low
 
   * New upstream release
