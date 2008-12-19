@@ -1,8 +1,12 @@
-exiv2 (0.18~pre2-2) UNRELEASED; urgency=low
+exiv2 (0.18-1) experimental; urgency=low
 
-  * NOT RELEASED YET
+  * New upstream release
+    - Fix "Setting "Exif.Image.DateTime Date" gives "Value too large"
+    exception" <explain what you changed and why> (Closes: #426274)
+    - Fix "FTBFS with GCC 4.4: missing #include" <explain what you changed
+    and why> (Closes: #505023)
 
- -- Mark Purcell <msp@debian.org>  Sat, 08 Nov 2008 13:08:08 +1100
+ -- Mark Purcell <msp@debian.org>  Fri, 19 Dec 2008 07:39:10 +1100
 
 exiv2 (0.18~pre2-1) experimental; urgency=low
 
