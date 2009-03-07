@@ -55,12 +55,12 @@ Description: EXIF/IPTC metadata manipulation library
 Package: libexiv2-dev
 Section: libdevel
 Architecture: any
-Depends: libexiv2-5 (= ${binary:Version}), pkg-config
+Depends: ${misc:Depends}, libexiv2-5 (= ${binary:Version}), pkg-config
 Suggests: libexiv2-doc
 Description: EXIF/IPTC metadata manipulation library - development files
  Exiv2 C++ header files.
 
-Package: libexiv2-doc
+Package: ${misc:Depends}, libexiv2-doc
 Section: doc
 Architecture: all
 Description: EXIF/IPTC metadata manipulation library - HTML documentation

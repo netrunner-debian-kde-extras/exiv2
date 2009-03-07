@@ -1,3 +1,10 @@
+exiv2 (0.18-2) UNRELEASED; urgency=low
+
+  * Upload to unstable
+  * Add ${misc:Depends}
+
+ -- Mark Purcell <msp@debian.org>  Sat, 07 Mar 2009 13:36:19 +1100
+
 exiv2 (0.18-1) experimental; urgency=low
 
   * New upstream release
