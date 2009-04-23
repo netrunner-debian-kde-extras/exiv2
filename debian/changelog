@@ -14,10 +14,8 @@ exiv2 (0.18.1-1) UNRELEASED; urgency=low
 exiv2 (0.18-1) experimental; urgency=low
 
   * New upstream release
-    - Fix "Setting "Exif.Image.DateTime Date" gives "Value too large"
-    exception" <explain what you changed and why> (Closes: #426274)
-    - Fix "FTBFS with GCC 4.4: missing #include" <explain what you changed
-    and why> (Closes: #505023)
+    - Closes: #426274 - "Setting "Exif.Image.DateTime Date" error"
+    - Closes: #505023 - "FTBFS with GCC 4.4: missing #include" 
 
  -- Mark Purcell <msp@debian.org>  Fri, 19 Dec 2008 07:39:10 +1100
 
