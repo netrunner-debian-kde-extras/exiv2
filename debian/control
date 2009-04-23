@@ -3,11 +3,11 @@ Section: graphics
 Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: KELEMEN Peter <fuji@debian.org>, Mark Purcell <msp@debian.org>, Fathi Boudra <fabo@debian.org>
-Build-Depends: cdbs, debhelper (>= 6), chrpath,
+Build-Depends: cdbs, debhelper (>= 7), chrpath,
  autotools-dev, libexpat1-dev, zlib1g-dev,
  libexpat1-dev,
  doxygen, graphviz, python, xsltproc
-Standards-Version: 3.8.0
+Standards-Version: 3.8.1
 Homepage: http://www.exiv2.org
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/kde-extras/exiv2/trunk
 Vcs-Svn: svn://svn.debian.org/pkg-kde/kde-extras/exiv2/trunk
@@ -60,7 +60,8 @@ Suggests: libexiv2-doc
 Description: EXIF/IPTC metadata manipulation library - development files
  Exiv2 C++ header files.
 
-Package: ${misc:Depends}, libexiv2-doc
+Package: libexiv2-doc
+Depends: ${misc:Depends}
 Section: doc
 Architecture: all
 Description: EXIF/IPTC metadata manipulation library - HTML documentation

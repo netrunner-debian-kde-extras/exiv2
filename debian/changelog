@@ -1,9 +1,15 @@
-exiv2 (0.18-2) UNRELEASED; urgency=low
+exiv2 (0.18.1-1) UNRELEASED; urgency=low
 
-  * Upload to unstable
+  * New upstream release
+    - write-support for Adobe Photoshop PSD images
+    - read-support for Panasonic RW2 images
+    - Panasonic and Nikon makernote update
+  * Upload to unstable - discussed on debian-release
+    - libexiv2-5 library transition
+  * Fix: package-lacks-versioned-build-depends-on-debhelper
   * Add ${misc:Depends}
 
- -- Mark Purcell <msp@debian.org>  Sat, 07 Mar 2009 13:36:19 +1100
+ -- Mark Purcell <msp@debian.org>  Tue, 21 Apr 2009 21:14:21 +1000
 
 exiv2 (0.18-1) experimental; urgency=low
 
