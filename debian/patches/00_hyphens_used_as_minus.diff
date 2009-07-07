@@ -1,0 +1,61 @@
+diff -Nur -x '*.orig' -x '*~' exiv2-0.18.2/src/exiv2.1 exiv2-0.18.2.new/src/exiv2.1
+--- exiv2-0.18.2/src/exiv2.1	2009-04-05 11:27:11.000000000 -0400
++++ exiv2-0.18.2.new/src/exiv2.1	2009-07-07 19:23:36.337387142 -0400
+@@ -171,17 +171,17 @@
+ .br
+ s : print a summary of the Exif metadata (the default)
+ .br
+-a : print Exif, IPTC and XMP metadata (shortcut for -Pkyct)
++a : print Exif, IPTC and XMP metadata (shortcut for \-Pkyct)
+ .br
+-t : interpreted (translated) Exif tags (-PEkyct) 
++t : interpreted (translated) Exif tags (\-PEkyct) 
+ .br
+-v : plain Exif tag values (-PExgnycv)
++v : plain Exif tag values (\-PExgnycv)
+ .br
+-h : hexdump of the Exif data (-PExgnycsh)
++h : hexdump of the Exif data (\-PExgnycsh)
+ .br
+-i : IPTC datasets (-PIkyct)
++i : IPTC datasets (\-PIkyct)
+ .br
+-x : XMP properties (-PXkyct)
++x : XMP properties (\-PXkyct)
+ .br
+ c : JPEG comment
+ .br
+@@ -256,7 +256,7 @@
+ p[<n>[,<m> ...]] : Extract preview images. The optional comma separated
+ list of preview image numbers is used to determine which preview images
+ to extract. The available preview images and their numbers are displayed
+-with the 'print' option -pp.
++with the 'print' option \-pp.
+ .br
+ X : Extract metadata to an XMP sidecar file <file>.xmp. The remaining
+ extract targets determine what metadata to extract to the sidecar
+@@ -393,13 +393,13 @@
+ exiv2 *.jpg
+ Prints a summary of the Exif information for all JPEG files in the directory.
+ .TP
+-exiv2 -pi image.jpg
++exiv2 \-pi image.jpg
+ Prints the IPTC metadata of the image.
+ .TP
+ exiv2 rename img_1234.jpg
+ Renames img_1234.jpg (taken on 13\-Nov\-05 at 22:58:31) to 20051113_225831.jpg
+ .TP
+-exiv2 -r':basename:_%Y%m' rename img_1234.jpg
++exiv2 \-r':basename:_%Y%m' rename img_1234.jpg
+ Renames img_1234.jpg to img_1234_200511.jpg
+ .TP
+ exiv2 \-et img1.jpg img2.jpg
+@@ -441,7 +441,7 @@
+ latitude respectively.
+ .TP
+ .nf
+-exiv2 insert -l/tmp -S.CRW /data/*.JPG
++exiv2 insert \-l/tmp \-S.CRW /data/*.JPG
+ .fi
+ Copy all metadata from CRW files in the /tmp directory to JPG files
+ with corresponding basenames in the /data directory. Note that this
