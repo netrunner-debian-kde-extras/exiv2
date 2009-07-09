@@ -1,13 +1,12 @@
-exiv2 (0.18.2-1) UNRELEASED; urgency=low
+exiv2 (0.18.2-1) unstable; urgency=low
 
-  * DO NOT UPLOAD
   * New upstream release
   * Added lintian overrides:
     - libexiv2-dev: extended-description-is-probably-too-short
   * Fixed a typo in README.Debian (s/enviroment/environment/)
   * Fixed hyphens as minus signs in the manpage, 00_hyphens_used_as_minus.diff
 
- -- Ryan Kavanagh <ryanakca@kubuntu.org>  Tue, 07 Jul 2009 19:17:01 -0400
+ -- Ryan Kavanagh <ryanakca@kubuntu.org>  Thu, 09 Jul 2009 18:50:32 -0400
 
 exiv2 (0.18.1-1) unstable; urgency=low
 
