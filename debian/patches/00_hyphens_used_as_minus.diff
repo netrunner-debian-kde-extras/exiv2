@@ -1,7 +1,6 @@
-diff -Nur -x '*.orig' -x '*~' exiv2-0.18.2/src/exiv2.1 exiv2-0.18.2.new/src/exiv2.1
---- exiv2-0.18.2/src/exiv2.1	2009-04-05 11:27:11.000000000 -0400
-+++ exiv2-0.18.2.new/src/exiv2.1	2009-07-07 19:23:36.337387142 -0400
-@@ -171,17 +171,17 @@
+--- a/src/exiv2.1
++++ b/src/exiv2.1
+@@ -171,17 +171,17 @@ Print mode for the 'print' action. Possi
  .br
  s : print a summary of the Exif metadata (the default)
  .br
@@ -25,7 +24,7 @@ diff -Nur -x '*.orig' -x '*~' exiv2-0.18.2/src/exiv2.1 exiv2-0.18.2.new/src/exiv
  .br
  c : JPEG comment
  .br
-@@ -256,7 +256,7 @@
+@@ -256,7 +256,7 @@ images and a modifier to generate an XMP
  p[<n>[,<m> ...]] : Extract preview images. The optional comma separated
  list of preview image numbers is used to determine which preview images
  to extract. The available preview images and their numbers are displayed
@@ -34,7 +33,7 @@ diff -Nur -x '*.orig' -x '*~' exiv2-0.18.2/src/exiv2.1 exiv2-0.18.2.new/src/exiv
  .br
  X : Extract metadata to an XMP sidecar file <file>.xmp. The remaining
  extract targets determine what metadata to extract to the sidecar
-@@ -393,13 +393,13 @@
+@@ -393,13 +393,13 @@ ignored (comments). Remaining lines are 
  exiv2 *.jpg
  Prints a summary of the Exif information for all JPEG files in the directory.
  .TP
@@ -50,7 +49,7 @@ diff -Nur -x '*.orig' -x '*~' exiv2-0.18.2/src/exiv2.1 exiv2-0.18.2.new/src/exiv
  Renames img_1234.jpg to img_1234_200511.jpg
  .TP
  exiv2 \-et img1.jpg img2.jpg
-@@ -441,7 +441,7 @@
+@@ -441,7 +441,7 @@ and GPSLatitudeRef contains either 'N' o
  latitude respectively.
  .TP
  .nf
