@@ -3,11 +3,11 @@ Section: graphics
 Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: KELEMEN Peter <fuji@debian.org>, Mark Purcell <msp@debian.org>, Fathi Boudra <fabo@debian.org>
-Build-Depends: cdbs, debhelper (>= 7), chrpath,
+Build-Depends: debhelper (>= 7), quilt, chrpath,
  autotools-dev, libexpat1-dev, zlib1g-dev,
  libexpat1-dev,
  doxygen, graphviz, python, xsltproc
-Standards-Version: 3.8.1
+Standards-Version: 3.8.2
 Homepage: http://www.exiv2.org
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/kde-extras/exiv2/trunk
 Vcs-Svn: svn://svn.debian.org/pkg-kde/kde-extras/exiv2/trunk

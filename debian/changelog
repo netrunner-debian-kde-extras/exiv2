@@ -1,12 +1,21 @@
 exiv2 (0.18.2-1) unstable; urgency=low
 
   * New upstream release
-  * Added lintian overrides:
-    - libexiv2-dev: extended-description-is-probably-too-short
-  * Fixed a typo in README.Debian (s/enviroment/environment/)
-  * Fixed hyphens as minus signs in the manpage, 00_hyphens_used_as_minus.diff
 
- -- Ryan Kavanagh <ryanakca@kubuntu.org>  Thu, 09 Jul 2009 18:50:32 -0400
+  [Ryan Kavanagh]
+
+  * Add lintian overrides:
+    - libexiv2-dev: extended-description-is-probably-too-short
+  * Fix a typo in README.Debian (s/enviroment/environment/)
+  * Fix hyphens as minus signs in the manpage, 00_hyphens_used_as_minus.diff
+
+  [Fathi Boudra]
+
+  * Bump Standards-Version from 3.8.1 to 3.8.2 (no changes needed)
+  * Add quilt build dependency
+  * Remove cdbs build dependency - use dh and rewrite debian/rules
+
+ -- Fathi Boudra <fabo@debian.org>  Thu, 09 Jul 2009 18:50:32 -0400
 
 exiv2 (0.18.1-1) unstable; urgency=low
 
