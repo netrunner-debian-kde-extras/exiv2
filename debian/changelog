@@ -1,3 +1,9 @@
+exiv2 (0.19-1) UNRELEASED; urgency=low
+
+  * New upstream release
+
+ -- Mark Purcell <msp@debian.org>  Fri, 01 Jan 2010 09:47:20 +1100
+
 exiv2 (0.18.2-1) unstable; urgency=low
 
   * New upstream release
