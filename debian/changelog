@@ -1,13 +1,15 @@
-exiv2 (0.19-1) UNRELEASED; urgency=low
+exiv2 (0.19-1) unstable; urgency=low
 
-  * New upstream release
+  * New upstream release 
+    - TIFF performance improvement and Nikon updates
   * NEW package libexiv2-6 - soname bump
 
- -- Mark Purcell <msp@debian.org>  Fri, 01 Jan 2010 09:53:40 +1100
+ -- Mark Purcell <msp@debian.org>  Fri, 01 Jan 2010 11:42:13 +1100
 
 exiv2 (0.18.2-1) unstable; urgency=low
 
   * New upstream release
+    - Bugfix release
 
   [Ryan Kavanagh]
 
