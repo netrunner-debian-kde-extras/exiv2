@@ -65,3 +65,10 @@ Section: doc
 Architecture: all
 Description: EXIF/IPTC metadata manipulation library - HTML documentation
  Exiv2 HTML documentation.
+
+Package: libexiv2-dbg
+Depends: ${misc:Depends}
+Section: debug
+Architecture: any
+Description: EXIF/IPTC metadata manipulation library - debug
+ Exiv2 debug symbols package
