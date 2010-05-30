@@ -1,11 +1,20 @@
-exiv2 (0.19-2) UNRELEASED; urgency=low
+exiv2 (0.20-1) experimental; urgency=low
 
-  * NOT RELEASED YET
+  * New upstream release
+    - NEW package libexiv2-9 - soname bump
+    - Makernote updates
+    - Nikon performance improvement (Closes: #579835)
 
   [ Michal Čihař ]
   * Add -dbg package (Closes: #557088)
 
- -- Mark Purcell <msp@debian.org>  Sat, 02 Jan 2010 09:34:07 +1100
+  [ Mark Purcell ]
+  * Siwtch to source/format = 3.0 (quilt)
+  * debian/control switch to '-' bullet marker (Closes: #564326) 
+  * Dropped fuji from Maintainers - inactive
+  * Simplify get-orig-source target - uscan
+
+ -- Mark Purcell <msp@debian.org>  Sun, 30 May 2010 14:45:46 +1000
 
 exiv2 (0.19-1) unstable; urgency=low
 

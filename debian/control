@@ -2,12 +2,12 @@ Source: exiv2
 Section: graphics
 Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
-Uploaders: KELEMEN Peter <fuji@debian.org>, Mark Purcell <msp@debian.org>, Fathi Boudra <fabo@debian.org>
-Build-Depends: debhelper (>= 7), quilt, chrpath,
+Uploaders: Mark Purcell <msp@debian.org>, Fathi Boudra <fabo@debian.org>
+Build-Depends: debhelper (>= 7.0.50~), chrpath,
  autotools-dev, libexpat1-dev, zlib1g-dev,
  libexpat1-dev,
  doxygen, graphviz, python, xsltproc
-Standards-Version: 3.8.2
+Standards-Version: 3.8.4
 Homepage: http://www.exiv2.org
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/kde-extras/exiv2/trunk
 Vcs-Svn: svn://svn.debian.org/pkg-kde/kde-extras/exiv2/trunk
@@ -29,7 +29,7 @@ Description: EXIF/IPTC metadata manipulation tool
   * extract, insert and delete the thumbnail image embedded in the Exif metadata
   * fix the Exif ISO setting of picture taken with Nikon cameras
 
-Package: libexiv2-6
+Package: libexiv2-9
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
@@ -41,8 +41,8 @@ Description: EXIF/IPTC metadata manipulation library
   * a smart IPTC implementation that does not affect data that programs like
     Photoshop store in the same image segment
   * EXIF MakerNote support:
-    o MakerNote tags can be accessed just like any other EXIF metadata
-    o a sophisticated write algorithm avoids corrupting the MakerNote:
+    - MakerNote tags can be accessed just like any other EXIF metadata
+    - a sophisticated write algorithm avoids corrupting the MakerNote:
   * extract and delete methods for EXIF thumbnails (both, JPEG and TIFF
     thumbnails)
   * set methods for EXIF thumbnails (JPEG only, TIFF thumbnails can be set from
@@ -54,7 +54,7 @@ Description: EXIF/IPTC metadata manipulation library
 Package: libexiv2-dev
 Section: libdevel
 Architecture: any
-Depends: ${misc:Depends}, libexiv2-6 (= ${binary:Version}), pkg-config
+Depends: ${misc:Depends}, libexiv2-9 (= ${binary:Version}), pkg-config
 Suggests: libexiv2-doc
 Description: EXIF/IPTC metadata manipulation library - development files
  Exiv2 C++ header files.
@@ -67,8 +67,9 @@ Description: EXIF/IPTC metadata manipulation library - HTML documentation
  Exiv2 HTML documentation.
 
 Package: libexiv2-dbg
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, libexiv2-9 (= ${binary:Version})
 Section: debug
 Architecture: any
+Priority: extra
 Description: EXIF/IPTC metadata manipulation library - debug
  Exiv2 debug symbols package
