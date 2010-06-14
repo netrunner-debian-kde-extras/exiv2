@@ -1,0 +1,111 @@
+Index: trunk/src/tiffvisitor.cpp
+===================================================================
+--- trunk/src/tiffvisitor.cpp	(revision 2018)
++++ trunk/src/tiffvisitor.cpp	(revision 2019)
+@@ -434,7 +434,7 @@
+         : exifData_(exifData),
+           iptcData_(iptcData),
+           xmpData_(xmpData),
+-          count_(0),
++          del_(true),
+           pRoot_(pRoot),
+           pSourceTree_(0),
+           byteOrder_(byteOrder),
+@@ -555,8 +555,7 @@
+ 
+     bool TiffEncoder::dirty() const
+     {
+-        assert(!(count_ > exifData_.count()));
+-        if (dirty_ || count_ != exifData_.count()) return true;
++        if (dirty_ || exifData_.count() > 0) return true;
+         return false;
+     }
+ 
+@@ -631,7 +630,7 @@
+         if (!object->mn_) {
+             encodeTiffComponent(object);
+         }
+-        else {
++        else if (del_) {
+             // The makernote is made up of decoded tags, delete binary tag
+             ExifKey key(object->tag(), tiffGroupName(object->group()));
+             ExifData::iterator pos = exifData_.findKey(key);
+@@ -643,7 +642,7 @@
+     {
+         assert(object != 0);
+ 
+-        ExifData::const_iterator pos = exifData_.findKey(ExifKey("Exif.MakerNote.ByteOrder"));
++        ExifData::iterator pos = exifData_.findKey(ExifKey("Exif.MakerNote.ByteOrder"));
+         if (pos != exifData_.end()) {
+             // Set Makernote byte order
+             ByteOrder bo = stringToByteOrder(pos->toString());
+@@ -651,15 +650,17 @@
+                 object->setByteOrder(bo);
+                 setDirty();
+             }
+-            ++count_;
++            if (del_) exifData_.erase(pos);
+         }
+-        // Count remaining synthesized tags
+-        static const char* synthesizedTags[] = {
+-            "Exif.MakerNote.Offset",
+-        };
+-        for (unsigned int i = 0; i < EXV_COUNTOF(synthesizedTags); ++i) {
+-            ExifData::iterator pos = exifData_.findKey(ExifKey(synthesizedTags[i]));
+-            if (pos != exifData_.end()) ++count_;
++        if (del_) {
++            // Remove remaining synthesized tags
++            static const char* synthesizedTags[] = {
++                "Exif.MakerNote.Offset",
++            };
++            for (unsigned int i = 0; i < EXV_COUNTOF(synthesizedTags); ++i) {
++                ExifData::iterator pos = exifData_.findKey(ExifKey(synthesizedTags[i]));
++                if (pos != exifData_.end()) exifData_.erase(pos);
++            }
+         }
+         // Modify encoder for Makernote peculiarities, byte order
+         byteOrder_ = object->byteOrder();
+@@ -717,7 +718,7 @@
+     {
+         assert(object != 0);
+ 
+-        ExifData::const_iterator pos = exifData_.end();
++        ExifData::iterator pos = exifData_.end();
+         const Exifdatum* ed = datum;
+         if (ed == 0) {
+             // Non-intrusive writing: find matching tag
+@@ -760,7 +761,9 @@
+                 object->encode(*this, ed);
+             }
+         }
+-        if (pos != exifData_.end()) ++count_;
++        if (del_ && pos != exifData_.end()) {
++            exifData_.erase(pos);
++        }
+ #ifdef DEBUG
+         std::cerr << "\n";
+ #endif
+@@ -962,6 +965,10 @@
+         writeMethod_ = wmIntrusive;
+         pSourceTree_ = pSourceDir;
+ 
++        // Ensure that the exifData_ entries are not deleted, to be able to
++        // iterate over all remaining entries.
++        del_ = false;
++
+         ExifData::const_iterator posBo = exifData_.end();
+         for (ExifData::const_iterator i = exifData_.begin();
+              i != exifData_.end(); ++i) {
+Index: trunk/src/tiffvisitor_int.hpp
+===================================================================
+--- trunk/src/tiffvisitor_int.hpp	(revision 2018)
++++ trunk/src/tiffvisitor_int.hpp	(revision 2019)
+@@ -493,7 +493,7 @@
+         ExifData exifData_;          //!< Copy of the Exif data to encode
+         const IptcData& iptcData_;   //!< IPTC data to encode, just a reference
+         const XmpData&  xmpData_;    //!< XMP data to encode, just a reference
+-        long count_;                 //!< Counter for processed Exifdata elements
++        bool del_;                   //!< Indicates if Exif data entries should be deleted after encoding
+         TiffComponent* pRoot_;       //!< Root element of the composite
+         TiffComponent* pSourceTree_; //!< Parsed source tree for reference
+         ByteOrder byteOrder_;        //!< Byteorder for encoding

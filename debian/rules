@@ -5,7 +5,7 @@ UPFILENAME = $(DEB_SOURCE_PACKAGE)-$(DEB_UPSTREAM_VERSION).tar.gz
 URL = http://www.exiv2.org/$(UPFILENAME)
 
 %:
-	dh --with quilt $@
+	dh --parallel $@
 
 override_dh_auto_configure:
 	dh_auto_configure -- --disable-rpath
