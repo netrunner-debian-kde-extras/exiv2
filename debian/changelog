@@ -1,3 +1,11 @@
+exiv2 (0.19-3) unstable; urgency=low
+
+  * Drop upstream Nikon fixes; partial patch breaks image display
+    - Reopen: #579835 - not fixed
+    - changeset 2017-2020 
+
+ -- Mark Purcell <msp@debian.org>  Tue, 15 Jun 2010 08:22:09 +1000
+
 exiv2 (0.19-2) unstable; urgency=low
 
   * Backport upstream Nikon Makernote regression fix (Closes: #579835)
