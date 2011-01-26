@@ -1,3 +1,12 @@
+exiv2 (0.21-1) experimental; urgency=low
+
+  * New upstream release (Closes: #556913, #486884, #511273)
+    - Samsung SRW and Makernote support, API Changes 
+  * NEW package libexiv2-10 - soname bump
+  * Update debian/control Description:
+
+ -- Mark Purcell <msp@debian.org>  Thu, 27 Jan 2011 00:05:42 +1100
+
 exiv2 (0.20-2) unstable; urgency=low
 
   * Upload to unstable - cleared with debian-release
