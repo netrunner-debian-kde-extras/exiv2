@@ -1,3 +1,10 @@
+exiv2 (0.21.1-1) experimental; urgency=low
+
+  * New upstream release
+  * Update upstream bug tracker in presubj
+
+ -- Mark Purcell <msp@debian.org>  Fri, 25 Feb 2011 20:03:39 +1100
+
 exiv2 (0.21-1) experimental; urgency=low
 
   * New upstream release (Closes: #556913, #486884, #511273)
