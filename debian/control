@@ -5,7 +5,7 @@ Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: Mark Purcell <msp@debian.org>, Fathi Boudra <fabo@debian.org>
 Build-Depends: debhelper (>= 7.0.50~), chrpath,
  autotools-dev, libexpat1-dev, zlib1g-dev,
- libexpat1-dev,
+ libjs-jquery, dh-linktree,
  doxygen, graphviz, python, xsltproc
 Standards-Version: 3.8.4
 Homepage: http://www.exiv2.org
@@ -38,7 +38,7 @@ Package: libexiv2-11
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Recommends: exiv2
+Suggests: exiv2
 Description: EXIF/IPTC metadata manipulation library
  Exiv2 is a C++ library and a command line utility to manage image metadata.
  It provides fast and easy read and write access to the Exif, IPTC and XMP
@@ -67,18 +67,7 @@ Description: EXIF/IPTC metadata manipulation library - development files
  It provides fast and easy read and write access to the Exif, IPTC and XMP
  metadata of images in various formats
  .
- Exiv2 library provides:
-  * fast read and write access to the Exif, IPTC, and XMP metadata of an image
-  * an easy to use and extensively documented API
-  * conversions of Exif and IPTC metadata to XMP and vice versa
-  * a smart IPTC implementation that does not affect data that programs like
-    Photoshop store in the same image segment
-  * Exif Makernote support:
-    - Makernote tags can be read and written just like any other metadata
-    - a sophisticated write algorithm avoids corrupting the Makernote
-  * a simple interface to extract previews embedded in RAW images and Exif
-    thumbnails
-  * set and delete methods for Exif thumbnails
+ This packages provides the development files for using exiv2.
 
 Package: libexiv2-doc
 Depends: ${misc:Depends}

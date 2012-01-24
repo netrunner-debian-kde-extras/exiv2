@@ -1,3 +1,17 @@
+exiv2 (0.22-2) experimental; urgency=low
+
+  * dh_auto_configure  $(shell dpkg-buildflags --export=configure)
+    - Fixes "Please enabled hardened build flags" (Closes: #656356)
+  * dh-linktree - fixes libexiv2-doc: embedded-javascript-library
+  * Update debian/copyright GPL-2 -  copyright-refers-to-symlink-license
+  * Fix spelling-error-in-manpage exiv2.1.gz explicitely explicitly
+  * Fix spelling-error-in-binary
+  * Switch to dh_bugfiles
+  * Add samples/ to libexiv2-doc/examples
+  * Fixed "Lib not recommend exiv2" changes to Suggests: (Closes: #615137)
+
+ -- Mark Purcell <msp@debian.org>  Wed, 25 Jan 2012 07:16:15 +1100
+
 exiv2 (0.22-1) experimental; urgency=low
 
   * New upstream release
