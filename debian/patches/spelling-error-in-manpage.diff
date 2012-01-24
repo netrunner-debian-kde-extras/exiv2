@@ -1,0 +1,13 @@
+Index: exiv2-0.22/src/exiv2.1
+===================================================================
+--- exiv2-0.22.orig/src/exiv2.1	2011-09-09 00:31:32.000000000 +1000
++++ exiv2-0.22/src/exiv2.1	2012-01-25 06:35:01.000000000 +1100
+@@ -372,7 +372,7 @@
+ .B XmpText | XmpAlt | XmpBag | XmpSeq | LangAlt
+ for XMP keys.
+ .sp 1
+-A default \fItype\fP is used if none is explicitely given. The default
++A default \fItype\fP is used if none is explicitly given. The default
+ is determined based on \fIkey\fP.
+ .TP
+ .I value
