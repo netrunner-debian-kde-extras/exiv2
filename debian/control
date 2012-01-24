@@ -67,7 +67,7 @@ Description: EXIF/IPTC metadata manipulation library - development files
  It provides fast and easy read and write access to the Exif, IPTC and XMP
  metadata of images in various formats
  .
- This packages provides the development files for using exiv2.
+ This package provides the development files for using exiv2.
 
 Package: libexiv2-doc
 Depends: ${misc:Depends}
