@@ -1,3 +1,16 @@
+exiv2 (0.23-1) unstable; urgency=low
+
+  * New upstream release
+    - Fixes "Support for .cr2 RAW files" (Closes: #665736)
+  * NEW package libexiv2-12 - match soname
+  * Drop spelling-error-in-binary.diff - included upstream
+  * Drop spelling-error-in-manpage.diff - included upstream
+  * Upload to unstable - coordinated through debian release
+    - Fixes "please package 0.21 or newer to unstable" (Closes: #650516)
+  * Update to Standard 3.9.3 - no changes necessary
+
+ -- Mark Purcell <msp@debian.org>  Sat, 05 May 2012 09:31:28 +1000
+
 exiv2 (0.22-2) experimental; urgency=low
 
   * dh_auto_configure  $(shell dpkg-buildflags --export=configure)
