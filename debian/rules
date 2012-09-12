@@ -9,6 +9,7 @@ override_dh_auto_configure:
 override_dh_clean:
 	dh_clean
 	rm -rf doc/html
+	-rm Makefile xmpsdk/src/.libs/libxmpsdk.la  # why? debuild complains of diff.
 
 override_dh_strip:
 	dh_strip -a --dbg-package=libexiv2-dbg

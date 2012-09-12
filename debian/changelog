@@ -1,3 +1,10 @@
+exiv2 (0.23-2) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+  * Fixup missing -doc - Thanks ~dancer
+
+ -- Mark Purcell <msp@debian.org>  Sat, 05 May 2012 23:12:42 +1000
+
 exiv2 (0.23-1) unstable; urgency=low
 
   * New upstream release
