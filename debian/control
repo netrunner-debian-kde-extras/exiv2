@@ -5,7 +5,7 @@ Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: Mark Purcell <msp@debian.org>, Fathi Boudra <fabo@debian.org>
 Build-Depends: debhelper (>= 7.0.50~), chrpath,
  autotools-dev, libexpat1-dev, zlib1g-dev,
- libjs-jquery, dh-linktree,
+ libjs-jquery,
  doxygen, graphviz, python, xsltproc
 Standards-Version: 3.9.3
 Homepage: http://www.exiv2.org
@@ -70,7 +70,7 @@ Description: EXIF/IPTC metadata manipulation library - development files
  This package provides the development files for using exiv2.
 
 Package: libexiv2-doc
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, libjs-jquery
 Section: doc
 Architecture: all
 Description: EXIF/IPTC metadata manipulation library - HTML documentation

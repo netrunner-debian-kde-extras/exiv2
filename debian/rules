@@ -28,6 +28,7 @@ override_dh_auto_build-indep:
 
 override_dh_installdocs:
 	dh_installdocs -A -Xcmd.txt -XMakefile -Xtemplates -XChangeLog
+	find debian -name jquery.js -exec ln -sfv /usr/share/javascript/jquery/jquery.js {} \;
 
 override_dh_installchangelogs:
 	dh_installchangelogs -A doc/ChangeLog
