@@ -25,7 +25,7 @@ exiv2 (0.24-2) UNRELEASED; urgency=low
     - adjust the library paths in .install files and rules to the multiarch
       paths
     - add Pre-Depends: ${misc:Pre-Depends} in libexiv2-13
-  * Mark libexiv2-13 as Multi-Arch: same.
+  * Mark libexiv2-13 and libexiv2-dbg as Multi-Arch: same.
   * Tighten the exiv2 dependency on the same version of the libexiv2 library.
   * Remove the extra "samples" subdirectory for the examples in libexiv2-dev.
   * Bump Standards-Version to 3.9.5, no changes required.

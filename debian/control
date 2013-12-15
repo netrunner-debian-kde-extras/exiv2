@@ -88,6 +88,7 @@ Depends: ${misc:Depends}, libexiv2-13 (= ${binary:Version})
 Section: debug
 Architecture: any
 Priority: extra
+Multi-Arch: same
 Description: EXIF/IPTC metadata manipulation library - debug
  Exiv2 is a C++ library and a command line utility to manage image metadata. It
  provides fast and easy read and write access to the Exif, IPTC and XMP metadata
