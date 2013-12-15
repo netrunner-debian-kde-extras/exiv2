@@ -1,17 +1,17 @@
-exiv2 (0.24-1) UNRELEASED; urgency=low
-
-  * NOT RELEASED YET
+exiv2 (0.24-1) experimental; urgency=low
 
   * New upstream release
-    -  support for Video metadata
+    - support for Video metadata
     - more cameras and accessories now recognised
     - Numerous bugs fixes, build and test improvments
+  * NEW package libexiv2-13 - match soname
   * Fix "libexiv2-doc documentation package seems to be lacking in
     content" include patch from ~dancer (Closes: #687278)
-  * Fix "config.{guess,sub} for AArch64" --with autotools_dev (Closes: #727295)
+  * Update "config.{guess,sub}" --with autotools_dev (Closes: #727295, #548926)
   * Drop 00_hyphens_used_as_minus.diff - included upstream
+  * Add specific +override_dh_auto_build-indep: target for doxygen build
 
- -- Mark Purcell <msp@debian.org>  Thu, 12 Dec 2013 06:10:13 +1100
+ -- Mark Purcell <msp@debian.org>  Sun, 15 Dec 2013 11:12:34 +1100
 
 exiv2 (0.23-1) unstable; urgency=low
 
