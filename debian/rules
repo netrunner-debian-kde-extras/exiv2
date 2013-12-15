@@ -34,4 +34,4 @@ override_dh_installchangelogs:
 	dh_installchangelogs -A doc/ChangeLog
 
 override_dh_compress:
-	dh_compress -X.xls -X.js -X.idx -X.xml -X.php
+	dh_compress -X.xls -X.js -X.idx -X.xml -X.php -X.cpp
