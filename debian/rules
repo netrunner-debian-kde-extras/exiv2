@@ -26,6 +26,7 @@ override_dh_auto_build-indep:
 override_dh_installdocs:
 	dh_installdocs -A -Xcmd.txt -XMakefile -Xtemplates -XChangeLog
 	find $(CURDIR)/debian -name jquery.js -exec ln -sfv /usr/share/javascript/jquery/jquery.js {} \;
+	find $(CURDIR)/debian -name '*.map' -o -name '*.md5' -delete
 
 override_dh_installchangelogs:
 	dh_installchangelogs -A doc/ChangeLog
