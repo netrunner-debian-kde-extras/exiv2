@@ -8,6 +8,7 @@ exiv2 (0.24-2) UNRELEASED; urgency=low
     - remove usage of dh-linktree: drop libexiv2-doc.linktrees and the
       dh-linktree build dependency
     - make libexiv2-doc depend on libjs-jquery
+  * Install the exiv2.1 man page using exiv2.install directly.
 
  -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Sun, 15 Dec 2013 19:22:59 +0100
 
