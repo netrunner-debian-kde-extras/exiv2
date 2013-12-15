@@ -3,7 +3,7 @@ Section: graphics
 Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: Mark Purcell <msp@debian.org>, Fathi Boudra <fabo@debian.org>
-Build-Depends: debhelper (>= 7.0.50~), chrpath,
+Build-Depends: debhelper (>= 9~), chrpath,
  autotools-dev, libexpat1-dev, zlib1g-dev,
  libjs-jquery,
  doxygen, graphviz, python, xsltproc
@@ -37,6 +37,7 @@ Description: EXIF/IPTC metadata manipulation tool
 Package: libexiv2-13
 Section: libs
 Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Suggests: exiv2
 Description: EXIF/IPTC metadata manipulation library
