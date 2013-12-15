@@ -6,10 +6,13 @@ exiv2 (0.24-1) UNRELEASED; urgency=low
     -  support for Video metadata
     - more cameras and accessories now recognised
     - Numerous bugs fixes, build and test improvments
+  * NEW package libexiv2-13 - match soname
   * Fix "libexiv2-doc documentation package seems to be lacking in
     content" include patch from ~dancer (Closes: #687278)
   * Fix "config.{guess,sub} for AArch64" --with autotools_dev (Closes: #727295)
   * Drop 00_hyphens_used_as_minus.diff - included upstream
+  * debian/rules suspend make doc (FTBFS) 
+  * Add specific +override_dh_auto_build-indep: target for doxygen build
 
  -- Mark Purcell <msp@debian.org>  Thu, 12 Dec 2013 06:10:13 +1100
 
