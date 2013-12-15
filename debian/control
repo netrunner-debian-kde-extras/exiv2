@@ -9,8 +9,8 @@ Build-Depends: debhelper (>= 7.0.50~), chrpath,
  doxygen, graphviz, python, xsltproc
 Standards-Version: 3.9.3
 Homepage: http://www.exiv2.org
-Vcs-Browser: http://svn.debian.org/wsvn/pkg-kde/kde-extras/exiv2/trunk
-Vcs-Svn: svn://svn.debian.org/pkg-kde/kde-extras/exiv2/trunk
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-kde/kde-extras/exiv2/trunk
+Vcs-Svn: svn://anonscm.debian.org/pkg-kde/kde-extras/exiv2/trunk
 
 Package: exiv2
 Architecture: any
