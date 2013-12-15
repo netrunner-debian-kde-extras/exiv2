@@ -1,6 +1,6 @@
-debian/tmp/usr/include/exiv2/*
-debian/tmp/usr/lib/pkgconfig/exiv2.pc
-debian/tmp/usr/lib/libexiv2.la
-debian/tmp/usr/share/locale/*
-debian/tmp/usr/lib/libexiv2.a
-debian/tmp/usr/lib/libexiv2.so
+usr/include/exiv2/*
+usr/lib/pkgconfig/exiv2.pc
+usr/lib/libexiv2.la
+usr/share/locale/*
+usr/lib/libexiv2.a
+usr/lib/libexiv2.so
