@@ -25,6 +25,7 @@ exiv2 (0.24-2) UNRELEASED; urgency=low
     - adjust the library paths in .install files and rules to the multiarch
       paths
     - add Pre-Depends: ${misc:Pre-Depends} in libexiv2-13
+  * Mark libexiv2-13 as Multi-Arch: same.
 
  -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Sun, 15 Dec 2013 19:22:59 +0100
 
