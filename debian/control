@@ -14,7 +14,8 @@ Vcs-Svn: svn://anonscm.debian.org/pkg-kde/kde-extras/exiv2/trunk
 
 Package: exiv2
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ libexiv2-13 (= ${binary:Version})
 Description: EXIF/IPTC metadata manipulation tool
  Exiv2 is a C++ library and a command line utility to manage image metadata.
  It provides fast and easy read and write access to the Exif, IPTC and XMP
