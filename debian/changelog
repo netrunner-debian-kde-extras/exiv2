@@ -6,7 +6,7 @@ exiv2 (0.24-3) experimental; urgency=medium
     Build-Depend-Indep, as they are needed in indep-build only.
   * Update libtool files for ppc64el. (Closes: #757412)
 
- -- Pino Toscano <pino@debian.org>  Thu, 28 Aug 2014 22:04:30 +0200
+ -- Pino Toscano <pino@debian.org>  Thu, 28 Aug 2014 23:00:16 +0200
 
 exiv2 (0.24-2) experimental; urgency=low
 
