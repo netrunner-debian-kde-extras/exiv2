@@ -1,3 +1,10 @@
+exiv2 (0.23-1.1) unreleased; urgency=low
+
+  * Non-maintainer upload.
+  * Ensure configurey is updated for new architectures (Closes: #727295)
+
+ -- Wookey <wookey@debian.org>  Wed, 18 Jun 2014 21:55:26 +0000
+
 exiv2 (0.23-1) unstable; urgency=low
 
   * New upstream release
