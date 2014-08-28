@@ -2,6 +2,8 @@ exiv2 (0.24-3) UNRELEASED; urgency=medium
 
   [ Pino Toscano ]
   * Integrate 0.23-1.1 NMU (thanks Wookey).
+  * Move the libjs-jquery, doxygen, graphviz build dependencies as
+    Build-Depend-Indep, as they are needed in indep-build only.
 
  -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Thu, 28 Aug 2014 21:46:54 +0200
 

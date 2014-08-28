@@ -5,8 +5,9 @@ Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: Mark Purcell <msp@debian.org>, Fathi Boudra <fabo@debian.org>
 Build-Depends: debhelper (>= 9~), chrpath,
  autotools-dev, libexpat1-dev, zlib1g-dev,
- libjs-jquery,
- doxygen, graphviz, python, xsltproc
+ python, xsltproc
+Build-Depends-Indep:
+ libjs-jquery, doxygen, graphviz,
 Standards-Version: 3.9.5
 Homepage: http://www.exiv2.org
 Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-kde/kde-extras/exiv2/trunk
