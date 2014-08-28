@@ -1,6 +1,6 @@
-exiv2 (0.24-3) UNRELEASED; urgency=medium
+exiv2 (0.24-3) experimental; urgency=medium
 
-  [ Pino Toscano ]
+  * Team upload.
   * Integrate 0.23-1.1 NMU (thanks Wookey).
   * Move the libjs-jquery, doxygen, graphviz build dependencies as
     Build-Depend-Indep, as they are needed in indep-build only.
@@ -8,7 +8,7 @@ exiv2 (0.24-3) UNRELEASED; urgency=medium
     - remove the autotools-dev build dependency, and add dh-autoreconf
     - switch from the autotools_dev dh addon to the autoreconf one
 
- -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Thu, 28 Aug 2014 21:46:54 +0200
+ -- Pino Toscano <pino@debian.org>  Thu, 28 Aug 2014 22:04:30 +0200
 
 exiv2 (0.24-2) experimental; urgency=low
 
