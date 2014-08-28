@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
 Uploaders: Mark Purcell <msp@debian.org>, Fathi Boudra <fabo@debian.org>
 Build-Depends: debhelper (>= 9~), chrpath,
- autotools-dev, libexpat1-dev, zlib1g-dev,
+ dh-autoreconf, libexpat1-dev, zlib1g-dev,
  python, xsltproc
 Build-Depends-Indep:
  libjs-jquery, doxygen, graphviz,
