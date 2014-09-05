@@ -64,7 +64,7 @@ Description: EXIF/IPTC metadata manipulation library
 Package: libexiv2-dev
 Section: libdevel
 Architecture: any
-Depends: ${misc:Depends}, libexiv2-13 (= ${binary:Version})
+Depends: ${misc:Depends}, libexiv2-13 (= ${binary:Version}), pkg-config
 Suggests: libexiv2-doc
 Description: EXIF/IPTC metadata manipulation library - development files
  Exiv2 is a C++ library and a command line utility to manage image metadata.

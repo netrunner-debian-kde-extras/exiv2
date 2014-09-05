@@ -2,6 +2,8 @@ exiv2 (0.24-4) unstable; urgency=medium
 
   * Team upload.
   * Upload to unstable. (See #732957)
+  * Re-add the pkg-config dependency in libexiv2-dev, as there is still one
+    source relying on it.
 
  -- Pino Toscano <pino@debian.org>  Fri, 05 Sep 2014 23:22:40 +0200
 
