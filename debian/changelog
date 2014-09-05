@@ -1,3 +1,10 @@
+exiv2 (0.24-4) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable. (See #732957)
+
+ -- Pino Toscano <pino@debian.org>  Fri, 05 Sep 2014 23:22:40 +0200
+
 exiv2 (0.24-3) experimental; urgency=medium
 
   * Team upload.
