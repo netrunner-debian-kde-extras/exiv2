@@ -1,3 +1,8 @@
+exiv2 (0.24-5) UNRELEASED; urgency=medium
+
+
+ -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Sat, 06 Sep 2014 23:36:33 +0200
+
 exiv2 (0.24-4) unstable; urgency=medium
 
   * Team upload.
