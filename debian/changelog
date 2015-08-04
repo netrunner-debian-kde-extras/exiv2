@@ -6,6 +6,15 @@ exiv2 (0.24-5) UNRELEASED; urgency=medium
 
  -- Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>  Sat, 06 Sep 2014 23:36:33 +0200
 
+exiv2 (0.24-4.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Add CVE-2014-9449.patch patch.
+    CVE-2014-9449: buffer overflow in RiffVideo::infoTagsHandler
+    Thanks to Klaus Ethgen <Klaus@Ethgen.de> (Closes: #773846)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Wed, 07 Jan 2015 20:25:48 +0100
+
 exiv2 (0.24-4) unstable; urgency=medium
 
   * Team upload.
