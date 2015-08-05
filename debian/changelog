@@ -1,4 +1,4 @@
-exiv2 (0.25-1~) UNRELEASED; urgency=medium
+exiv2 (0.25-1) unstable; urgency=medium
 
   [ Pino Toscano ]
   * libexiv2-dev: stop again depending on pkg-config, as this is no more
@@ -11,7 +11,7 @@ exiv2 (0.25-1~) UNRELEASED; urgency=medium
   * Bump Standards-Version to 3.9.6, no changes needed.
   * Update copyright information.
 
- -- Maximiliano Curia <maxy@debian.org>  Wed, 05 Aug 2015 11:14:56 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 05 Aug 2015 13:07:18 +0200
 
 exiv2 (0.24-4.1) unstable; urgency=medium
 
