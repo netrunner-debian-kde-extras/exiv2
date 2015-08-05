@@ -5,7 +5,7 @@ exiv2 (0.25-1~) UNRELEASED; urgency=medium
     needed now (for real this time).
 
   [ Maximiliano Curia ]
-  * New upstream release (0.25).
+  * New upstream release (0.25). (Closes: #789956)
   * Refresh patch: libtool_update.diff
   * Remove upstream applied patch: CVE-2014-9449.patch
   * Bump Standards-Version to 3.9.6, no changes needed.
