@@ -6,6 +6,8 @@ exiv2 (0.25-1~) UNRELEASED; urgency=medium
 
   [ Maximiliano Curia ]
   * New upstream release (0.25).
+  * Refresh patch: libtool_update.diff
+  * Remove upstream applied patch: CVE-2014-9449.patch
 
  -- Maximiliano Curia <maxy@debian.org>  Wed, 05 Aug 2015 11:14:56 +0200
 
