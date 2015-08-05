@@ -1,5 +1,5 @@
 # SymbolsHelper-Confirmed: 0.24 amd64
-libexiv2.so.13 libexiv2-12 #MINVER#
+libexiv2.so.14 libexiv2-14 #MINVER#
  _Z11_exvGettextPKc@Base 0.24
  _Z15dumpLibraryInfoRSo@Base 0.24
  _ZN5Exiv210AsciiValue4readERKSs@Base 0.24

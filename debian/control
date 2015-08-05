@@ -16,7 +16,7 @@ Vcs-Svn: svn://anonscm.debian.org/pkg-kde/kde-extras/exiv2/trunk
 Package: exiv2
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends},
- libexiv2-13 (= ${binary:Version})
+ libexiv2-14 (= ${binary:Version})
 Description: EXIF/IPTC metadata manipulation tool
  Exiv2 is a C++ library and a command line utility to manage image metadata.
  It provides fast and easy read and write access to the Exif, IPTC and XMP
@@ -24,7 +24,7 @@ Description: EXIF/IPTC metadata manipulation tool
  .
  Exiv2 command line utility to:
  .
-  * print Exif, IPTC and XMP image metadata in different formats: 
+  * print Exif, IPTC and XMP image metadata in different formats:
     - Exif summary info, interpreted values, or the plain data for each tag
   * set, add and delete Exif, IPTC and XMP image metadata from command line
     modify commands or command scripts
@@ -36,7 +36,7 @@ Description: EXIF/IPTC metadata manipulation tool
   * print, set and delete the JPEG comment of JPEG images
   * fix the Exif ISO setting of picture taken with Canon and Nikon cameras
 
-Package: libexiv2-13
+Package: libexiv2-14
 Section: libs
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
@@ -64,7 +64,7 @@ Description: EXIF/IPTC metadata manipulation library
 Package: libexiv2-dev
 Section: libdevel
 Architecture: any
-Depends: ${misc:Depends}, libexiv2-13 (= ${binary:Version}), pkg-config
+Depends: ${misc:Depends}, libexiv2-14 (= ${binary:Version}), pkg-config
 Suggests: libexiv2-doc
 Description: EXIF/IPTC metadata manipulation library - development files
  Exiv2 is a C++ library and a command line utility to manage image metadata.
@@ -85,7 +85,7 @@ Description: EXIF/IPTC metadata manipulation library - HTML documentation
  This package provides the Exiv2 HTML documentation.
 
 Package: libexiv2-dbg
-Depends: ${misc:Depends}, libexiv2-13 (= ${binary:Version})
+Depends: ${misc:Depends}, libexiv2-14 (= ${binary:Version})
 Section: debug
 Architecture: any
 Priority: extra
