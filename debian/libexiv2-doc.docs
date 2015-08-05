@@ -1,4 +1,4 @@
-doc/include
-doc/html/
 doc/*.txt
+doc/html/
+doc/include
 src/TODO
