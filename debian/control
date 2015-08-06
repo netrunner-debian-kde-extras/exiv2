@@ -9,7 +9,8 @@ Build-Depends: autotools-dev,
                libexpat1-dev,
                python,
                xsltproc,
-               zlib1g-dev
+               zlib1g-dev,
+               pkg-kde-tools
 Build-Depends-Indep: doxygen, graphviz, libjs-jquery
 Standards-Version: 3.9.6
 Homepage: http://www.exiv2.org
