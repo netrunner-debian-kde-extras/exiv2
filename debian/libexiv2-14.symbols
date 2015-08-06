@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 0.25 alpha amd64 armel armhf hppa i386 kfreebsd-i386 mips mipsel powerpc ppc64 s390x sh4 x32
+# SymbolsHelper-Confirmed: 0.25 alpha amd64 arm64 armel armhf hppa i386 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc ppc64 ppc64el s390x sh4 x32
 libexiv2.so.14 libexiv2-14 #MINVER#
  _Z11_exvGettextPKc@Base 0.25
  (arch=!sh4)_ZN5Exiv210AsciiValue4readERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE@Base 0.25
@@ -140,8 +140,8 @@ libexiv2.so.14 libexiv2-14 #MINVER#
  (arch=sh4)_ZN5Exiv212XmpTextValueD0Ev@Base 0.25
  (arch=sh4)_ZN5Exiv212XmpTextValueD1Ev@Base 0.25
  (arch=sh4)_ZN5Exiv212XmpTextValueD2Ev@Base 0.25
- (subst)_ZN5Exiv212base64decodeEPKcPc{size_t}@Base 0.25
- (subst)_ZN5Exiv212base64encodeEPKv{size_t}Pc{size_t}@Base 0.25
+ (subst|arch=!amd64)_ZN5Exiv212base64decodeEPKcPc{size_t}@Base 0.25
+ (subst|arch=!amd64)_ZN5Exiv212base64encodeEPKv{size_t}Pc{size_t}@Base 0.25
  _ZN5Exiv212exposureModeERKNS_8ExifDataE@Base 0.25
  _ZN5Exiv212exposureTimeERKNS_8ExifDataE@Base 0.25
  (arch=!sh4)_ZN5Exiv212fileProtocolERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE@Base 0.25
@@ -320,7 +320,7 @@ libexiv2.so.14 libexiv2-14 #MINVER#
  _ZN5Exiv25ValueD1Ev@Base 0.25
  _ZN5Exiv25ValueD2Ev@Base 0.25
  _ZN5Exiv25ValueaSERKS0_@Base 0.25
- (arch=!sh4|subst)_ZN5Exiv25isHexERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE{size_t}S7_@Base 0.25
+ (arch=!amd64 !sh4|subst)_ZN5Exiv25isHexERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE{size_t}S7_@Base 0.25
  (arch=sh4)_ZN5Exiv25isHexERKSsjS1_@Base 0.25
  _ZN5Exiv25modelERKNS_8ExifDataE@Base 0.25
  _ZN5Exiv26FileIo16populateFakeDataEv@Base 0.25
@@ -353,20 +353,20 @@ libexiv2.so.14 libexiv2-14 #MINVER#
  _ZN5Exiv26FileIoD0Ev@Base 0.25
  _ZN5Exiv26FileIoD1Ev@Base 0.25
  _ZN5Exiv26FileIoD2Ev@Base 0.25
- (subst)_ZN5Exiv26HttpIo8HttpImpl11writeRemoteEPKh{size_t}ll@Base 0.25
+ (subst|arch=!amd64)_ZN5Exiv26HttpIo8HttpImpl11writeRemoteEPKh{size_t}ll@Base 0.25
  _ZN5Exiv26HttpIo8HttpImpl13getFileLengthEv@Base 0.25
  (arch=!sh4)_ZN5Exiv26HttpIo8HttpImpl14getDataByRangeEllRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE@Base 0.25
  (arch=sh4)_ZN5Exiv26HttpIo8HttpImpl14getDataByRangeEllRSs@Base 0.25
- (arch=!sh4|subst)_ZN5Exiv26HttpIo8HttpImplC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE{size_t}@Base 0.25
+ (arch=!amd64 !sh4|subst)_ZN5Exiv26HttpIo8HttpImplC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE{size_t}@Base 0.25
  (arch=sh4)_ZN5Exiv26HttpIo8HttpImplC1ERKSsj@Base 0.25
- (arch=!sh4|subst)_ZN5Exiv26HttpIo8HttpImplC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE{size_t}@Base 0.25
+ (arch=!amd64 !sh4|subst)_ZN5Exiv26HttpIo8HttpImplC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE{size_t}@Base 0.25
  (arch=sh4)_ZN5Exiv26HttpIo8HttpImplC2ERKSsj@Base 0.25
  (arch=sh4)_ZN5Exiv26HttpIo8HttpImplD0Ev@Base 0.25
  (arch=sh4)_ZN5Exiv26HttpIo8HttpImplD1Ev@Base 0.25
  (arch=sh4)_ZN5Exiv26HttpIo8HttpImplD2Ev@Base 0.25
- (arch=!sh4|subst)_ZN5Exiv26HttpIoC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE{size_t}@Base 0.25
+ (arch=!amd64 !sh4|subst)_ZN5Exiv26HttpIoC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE{size_t}@Base 0.25
  (arch=sh4)_ZN5Exiv26HttpIoC1ERKSsj@Base 0.25
- (arch=!sh4|subst)_ZN5Exiv26HttpIoC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE{size_t}@Base 0.25
+ (arch=!amd64 !sh4|subst)_ZN5Exiv26HttpIoC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE{size_t}@Base 0.25
  (arch=sh4)_ZN5Exiv26HttpIoC2ERKSsj@Base 0.25
  _ZN5Exiv26LogMsg14defaultHandlerEiPKc@Base 0.25
  _ZN5Exiv26LogMsg6level_E@Base 0.25
@@ -675,10 +675,10 @@ libexiv2.so.14 libexiv2-14 #MINVER#
  (arch=sh4)_ZN5Exiv28RafImageD1Ev@Base 0.25
  (arch=sh4)_ZN5Exiv28RafImageD2Ev@Base 0.25
  _ZN5Exiv28RemoteIo16populateFakeDataEv@Base 0.25
- (subst)_ZN5Exiv28RemoteIo4Impl14populateBlocksE{size_t}{size_t}@Base 0.25
- (arch=!sh4|subst)_ZN5Exiv28RemoteIo4ImplC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE{size_t}@Base 0.25
+ (subst|arch=!amd64)_ZN5Exiv28RemoteIo4Impl14populateBlocksE{size_t}{size_t}@Base 0.25
+ (arch=!amd64 !sh4|subst)_ZN5Exiv28RemoteIo4ImplC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE{size_t}@Base 0.25
  (arch=sh4)_ZN5Exiv28RemoteIo4ImplC1ERKSsj@Base 0.25
- (arch=!sh4|subst)_ZN5Exiv28RemoteIo4ImplC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE{size_t}@Base 0.25
+ (arch=!amd64 !sh4|subst)_ZN5Exiv28RemoteIo4ImplC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE{size_t}@Base 0.25
  (arch=sh4)_ZN5Exiv28RemoteIo4ImplC2ERKSsj@Base 0.25
  _ZN5Exiv28RemoteIo4ImplD0Ev@Base 0.25
  _ZN5Exiv28RemoteIo4ImplD1Ev@Base 0.25
@@ -750,7 +750,7 @@ libexiv2.so.14 libexiv2-14 #MINVER#
  (arch=!sh4)_ZN5Exiv28XmpdatumaSERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE@Base 0.25
  _ZN5Exiv28XmpdatumaSERKS0_@Base 0.25
  (arch=sh4)_ZN5Exiv28XmpdatumaSERKSs@Base 0.25
- (arch=!alpha !amd64 !ppc64 !s390x)_ZN5Exiv28XmpdatumaSIA30_cEERS0_RKT_@Base 0.25
+ (arch=!alpha !amd64 !arm64 !kfreebsd-amd64 !ppc64 !ppc64el !s390x)_ZN5Exiv28XmpdatumaSIA30_cEERS0_RKT_@Base 0.25
  (optional=templinst)_ZN5Exiv28XmpdatumaSIiEERS0_RKT_@Base 0.25
  _ZN5Exiv28contrastERKNS_8ExifDataE@Base 0.25
  _ZN5Exiv28exifTimeEPKcP2tm@Base 0.25
@@ -1324,34 +1324,34 @@ libexiv2.so.14 libexiv2-14 #MINVER#
  (optional=templinst)_ZNSt6vectorISt4pairIPKhjESaIS3_EEaSERKS5_@Base 0.25
  (optional=templinst)_ZNSt6vectorISt4pairIiiESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_@Base 0.25
  (optional=templinst)_ZNSt6vectorISt4pairIjjESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_@Base 0.25
- (optional=templinst|arch=alpha amd64 ppc64 s390x)_ZNSt6vectorISt4pairImmESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_@Base 0.25
- (optional=templinst|subst)_ZNSt6vectorISt4pairI{size_t}{size_t}ESaIS1_EE9push_backERKS1_@Base 0.25
+ (optional=templinst|arch=alpha amd64 arm64 kfreebsd-amd64 ppc64 ppc64el s390x)_ZNSt6vectorISt4pairImmESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_@Base 0.25
+ (optional=templinst|subst|arch=!amd64)_ZNSt6vectorISt4pairI{size_t}{size_t}ESaIS1_EE9push_backERKS1_@Base 0.25
  (optional=templinst)_ZNSt6vectorIcSaIcEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPcS1_EERKc@Base 0.25
  (optional=templinst)_ZNSt6vectorIdSaIdEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPdS1_EERKd@Base 0.25
  (optional=templinst)_ZNSt6vectorIfSaIfEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPfS1_EERKf@Base 0.25
  (optional=templinst)_ZNSt6vectorIhSaIhEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPhS1_EERKh@Base 0.25
- (optional=templinst|subst)_ZNSt6vectorIhSaIhEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPhS1_EE{size_t}RKh@Base 0.25
+ (optional=templinst|subst|arch=!amd64)_ZNSt6vectorIhSaIhEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPhS1_EE{size_t}RKh@Base 0.25
  (optional=templinst)_ZNSt6vectorIiSaIiEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPiS1_EERKi@Base 0.25
  (optional=templinst)_ZNSt6vectorIjSaIjEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPjS1_EERKj@Base 0.25
- (optional=templinst|arch=alpha amd64 ppc64 s390x)_ZNSt6vectorImSaImEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPmS1_EERKm@Base 0.25
+ (optional=templinst|arch=alpha amd64 arm64 kfreebsd-amd64 ppc64 ppc64el s390x)_ZNSt6vectorImSaImEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPmS1_EERKm@Base 0.25
  (optional=templinst)_ZNSt6vectorIsSaIsEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPsS1_EERKs@Base 0.25
  (optional=templinst)_ZNSt6vectorItSaItEE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPtS1_EERKt@Base 0.25
- (optional=templinst|subst)_ZNSt6vectorI{size_t}SaI{size_t}EE9push_backERK{size_t}@Base 0.25
+ (optional=templinst|subst|arch=!amd64)_ZNSt6vectorI{size_t}SaI{size_t}EE9push_backERK{size_t}@Base 0.25
  (optional=templinst|arch=!sh4)_ZNSt7__cxx1110_List_baseIN5Exiv29ExifdatumESaIS2_EE8_M_clearEv@Base 0.25
  (optional=templinst|arch=!sh4)_ZNSt7__cxx114listIN5Exiv29ExifdatumESaIS2_EE4sortIPFbRKNS1_9MetadatumES8_EEEvT_@Base 0.25
  (optional=templinst|arch=!sh4)_ZNSt7__cxx114listIN5Exiv29ExifdatumESaIS2_EE5mergeIPFbRKNS1_9MetadatumES8_EEEvRS4_T_@Base 0.25
  (optional=templinst|arch=!sh4)_ZNSt7__cxx114listIN5Exiv29ExifdatumESaIS2_EEaSERKS4_@Base 0.25
  (optional=templinst|arch=!sh4)_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N5Exiv29XmpNsInfoEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE24_M_get_insert_unique_posERS7_@Base 0.25
- (optional=templinst|arch=amd64 hppa x32)_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N5Exiv29XmpNsInfoEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorISA_ERS7_@Base 0.25
+ (optional=templinst|arch=amd64 arm64 hppa kfreebsd-amd64 ppc64el x32)_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N5Exiv29XmpNsInfoEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorISA_ERS7_@Base 0.25
  (optional=templinst|arch=!sh4)_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N5Exiv29XmpNsInfoEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE4findERS7_@Base 0.25
  (optional=templinst|arch=!sh4)_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_N5Exiv29XmpNsInfoEESt10_Select1stISA_ESt4lessIS5_ESaISA_EE8_M_eraseEPSt13_Rb_tree_nodeISA_E@Base 0.25
  (optional=templinst|arch=!sh4)_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE12_M_erase_auxESt23_Rb_tree_const_iteratorIS8_E@Base 0.25
  (optional=templinst|arch=!sh4)_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE24_M_get_insert_unique_posERS7_@Base 0.25
- (optional=templinst|arch=amd64 hppa x32)_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS8_ERS7_@Base 0.25
+ (optional=templinst|arch=amd64 arm64 hppa kfreebsd-amd64 ppc64el x32)_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS8_ERS7_@Base 0.25
  (optional=templinst|arch=!sh4)_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE4findERS7_@Base 0.25
  (optional=templinst|arch=!sh4)_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E@Base 0.25
  (optional=templinst)_ZNSt8_Rb_treeIPKhSt4pairIKS1_N5Exiv28Internal5IfdIdEESt10_Select1stIS7_ESt4lessIS1_ESaIS7_EE24_M_get_insert_unique_posERS3_@Base 0.25
- (optional=templinst|arch=amd64 hppa sh4 x32)_ZNSt8_Rb_treeIPKhSt4pairIKS1_N5Exiv28Internal5IfdIdEESt10_Select1stIS7_ESt4lessIS1_ESaIS7_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS7_ERS3_@Base 0.25
+ (optional=templinst|arch=amd64 arm64 hppa kfreebsd-amd64 ppc64el sh4 x32)_ZNSt8_Rb_treeIPKhSt4pairIKS1_N5Exiv28Internal5IfdIdEESt10_Select1stIS7_ESt4lessIS1_ESaIS7_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS7_ERS3_@Base 0.25
  (optional=templinst)_ZNSt8_Rb_treeIPKhSt4pairIKS1_N5Exiv28Internal5IfdIdEESt10_Select1stIS7_ESt4lessIS1_ESaIS7_EE8_M_eraseEPSt13_Rb_tree_nodeIS7_E@Base 0.25
  (optional=templinst|arch=sh4)_ZNSt8_Rb_treeISsSt4pairIKSsN5Exiv29XmpNsInfoEESt10_Select1stIS4_ESt4lessISsESaIS4_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS4_ERKS4_@Base 0.25
  (optional=templinst|arch=sh4)_ZNSt8_Rb_treeISsSt4pairIKSsN5Exiv29XmpNsInfoEESt10_Select1stIS4_ESt4lessISsESaIS4_EE24_M_get_insert_unique_posERS1_@Base 0.25
@@ -1365,7 +1365,7 @@ libexiv2.so.14 libexiv2-14 #MINVER#
  (optional=templinst|arch=sh4)_ZNSt8_Rb_treeISsSt4pairIKSsSsESt10_Select1stIS2_ESt4lessISsESaIS2_EE4findERS1_@Base 0.25
  (optional=templinst|arch=sh4)_ZNSt8_Rb_treeISsSt4pairIKSsSsESt10_Select1stIS2_ESt4lessISsESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E@Base 0.25
  (optional=templinst|arch=!sh4)_ZNSt8_Rb_treeIiSt4pairIKiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEESt10_Select1stIS8_ESt4lessIiESaIS8_EE24_M_get_insert_unique_posERS1_@Base 0.25
- (optional=templinst|arch=amd64 hppa x32)_ZNSt8_Rb_treeIiSt4pairIKiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEESt10_Select1stIS8_ESt4lessIiESaIS8_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS8_ERS1_@Base 0.25
+ (optional=templinst|arch=amd64 arm64 hppa kfreebsd-amd64 ppc64el x32)_ZNSt8_Rb_treeIiSt4pairIKiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEESt10_Select1stIS8_ESt4lessIiESaIS8_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS8_ERS1_@Base 0.25
  (optional=templinst|arch=!sh4)_ZNSt8_Rb_treeIiSt4pairIKiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEESt10_Select1stIS8_ESt4lessIiESaIS8_EE8_M_eraseEPSt13_Rb_tree_nodeIS8_E@Base 0.25
  (optional=templinst|arch=sh4)_ZNSt8_Rb_treeIiSt4pairIKiSsESt10_Select1stIS2_ESt4lessIiESaIS2_EE17_M_insert_unique_ESt23_Rb_tree_const_iteratorIS2_ERKS2_@Base 0.25
  (optional=templinst|arch=sh4)_ZNSt8_Rb_treeIiSt4pairIKiSsESt10_Select1stIS2_ESt4lessIiESaIS2_EE24_M_get_insert_unique_posERS1_@Base 0.25
@@ -1375,12 +1375,12 @@ libexiv2.so.14 libexiv2-14 #MINVER#
  (optional=templinst|arch=sh4)_ZNSt8_Rb_treeIjSt4pairIKjS0_IPSsS2_EESt10_Select1stIS4_ESt4lessIjESaIS4_EE28_M_get_insert_hint_equal_posESt23_Rb_tree_const_iteratorIS4_ERS1_@Base 0.25
  (optional=templinst|arch=sh4)_ZNSt8_Rb_treeIjSt4pairIKjS0_IPSsS2_EESt10_Select1stIS4_ESt4lessIjESaIS4_EE8_M_eraseEPSt13_Rb_tree_nodeIS4_E@Base 0.25
  (optional=templinst)_ZNSt8_Rb_treeItSt4pairIKtiESt10_Select1stIS2_ESt4lessItESaIS2_EE24_M_get_insert_unique_posERS1_@Base 0.25
- (optional=templinst|arch=amd64 hppa sh4 x32)_ZNSt8_Rb_treeItSt4pairIKtiESt10_Select1stIS2_ESt4lessItESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_@Base 0.25
+ (optional=templinst|arch=amd64 arm64 hppa kfreebsd-amd64 ppc64el sh4 x32)_ZNSt8_Rb_treeItSt4pairIKtiESt10_Select1stIS2_ESt4lessItESaIS2_EE29_M_get_insert_hint_unique_posESt23_Rb_tree_const_iteratorIS2_ERS1_@Base 0.25
  (optional=templinst)_ZNSt8_Rb_treeItSt4pairIKtiESt10_Select1stIS2_ESt4lessItESaIS2_EE8_M_eraseEPSt13_Rb_tree_nodeIS2_E@Base 0.25
- (optional=templinst|arch=amd64 hppa x32|subst)_ZNSt8_Rb_treeI{size_t}St4pairIK{size_t}S0_IPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_EESt10_Select1stISA_ESt4lessI{size_t}ESaISA_EE28_M_get_insert_hint_equal_posESt23_Rb_tree_const_iteratorISA_ERS1_@Base 0.25
- (optional=templinst|arch=!sh4|subst)_ZNSt8_Rb_treeI{size_t}St4pairIK{size_t}S0_IPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_EESt10_Select1stISA_ESt4lessI{size_t}ESaISA_EE8_M_eraseEPSt13_Rb_tree_nodeISA_E@Base 0.25
+ (optional=templinst|arch=arm64 hppa kfreebsd-amd64 ppc64el x32|subst)_ZNSt8_Rb_treeI{size_t}St4pairIK{size_t}S0_IPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_EESt10_Select1stISA_ESt4lessI{size_t}ESaISA_EE28_M_get_insert_hint_equal_posESt23_Rb_tree_const_iteratorISA_ERS1_@Base 0.25
+ (optional=templinst|arch=!amd64 !sh4|subst)_ZNSt8_Rb_treeI{size_t}St4pairIK{size_t}S0_IPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_EESt10_Select1stISA_ESt4lessI{size_t}ESaISA_EE8_M_eraseEPSt13_Rb_tree_nodeISA_E@Base 0.25
  (optional=templinst|arch=!sh4)_ZNSt8auto_ptrIN5Exiv25ValueEEaSESt12auto_ptr_refIS1_E@Base 0.25
- (optional=templinst|arch=amd64 armel armhf hppa sh4 x32|subst)_ZSt17__rotate_adaptiveIN9__gnu_cxx17__normal_iteratorIPN5Exiv29IptcdatumESt6vectorIS3_SaIS3_EEEES4_{ssize_t}ET_S9_S9_S9_T1_SA_T0_SA_@Base 0.25
+ (optional=templinst|arch=arm64 armel armhf hppa kfreebsd-amd64 ppc64el sh4 x32|subst)_ZSt17__rotate_adaptiveIN9__gnu_cxx17__normal_iteratorIPN5Exiv29IptcdatumESt6vectorIS3_SaIS3_EEEES4_{ssize_t}ET_S9_S9_S9_T1_SA_T0_SA_@Base 0.25
  (optional=templinst|arch=sh4)_ZSt8__rotateIN9__gnu_cxx17__normal_iteratorIPN5Exiv29IptcdatumESt6vectorIS3_SaIS3_EEEEEvT_S9_S9_St26random_access_iterator_tag@Base 0.25
  (optional=templinst|arch=!sh4)_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EEPKS5_RKS8_@Base 0.25
  (optional=templinst|arch=!sh4)_ZStplIcSt11char_traitsIcESaIcEENSt7__cxx1112basic_stringIT_T0_T1_EERKS8_SA_@Base 0.25
